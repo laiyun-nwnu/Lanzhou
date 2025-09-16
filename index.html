@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>兰州地名学习 | 国际中文教学</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #3a5a40;
+      --secondary-color: #a3b18a;
+      --accent-color: #588157;
+      --light-color: #dad7cd;
+      --dark-color: #344e41;
+    }
+    body {
+      font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+      background-color: #f8f9fa;
+    }
+    .navbar {
+      background-color: var(--primary-color);
+    }
+    .navbar-brand, .nav-link {
+      color: white !important;
+    }
+    .hero-section {
+      background-color: var(--secondary-color);
+      color: white;
+      padding: 3rem 0;
+      margin-bottom: 2rem;
+    }
+    .network-container {
+      height: 600px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    .feature-card {
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      height: 100%;
+      transition: transform 0.3s;
+    }
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+    .card-header {
+      background-color: var(--accent-color);
+      color: white;
+      font-weight: bold;
+    }
+    .btn-primary {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+    .btn-primary:hover {
+      background-color: var(--dark-color);
+      border-color: var(--dark-color);
+    }
+    footer {
+      background-color: var(--dark-color);
+      color: white;
+      padding: 2rem 0;
+    }
+    .category-legend {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .category-item {
+      display: flex;
+      align-items: center;
+      margin: 0.5rem 1rem;
+    }
+    .color-box {
+      width: 15px;
+      height: 15px;
+      margin-right: 5px;
+      border-radius: 3px;
+    }
+    .network-controls {
+      margin-bottom: 1rem;
+    }
+    #searchInput {
+      max-width: 200px;
+    }
+    .tooltip-inner {
+      max-width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">兰州地名学习</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">首页</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#network">地名网络</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">特色功能</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">关于项目</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 主标题区 -->
+  <section class="hero-section">
+    <div class="container text-center">
+      <h1 class="display-4">探索兰州地名</h1>
+      <p class="lead">通过交互式网络图了解兰州地名的关联与分布</p>
+    </div>
+  </section>
+
+  <!-- 地名网络区 -->
+  <section id="network" class="container mb-5">
+    <h2 class="text-center mb-4">兰州地名网络</h2>
+    <p class="text-center mb-4">下面的网络图展示了兰州主要地名之间的语义关联。不同颜色代表不同类别的地名。</p>
+    
+    <div class="category-legend">
+      <div class="category-item"><div class="color-box" style="background-color: #5470c6;"></div><span>景点名胜</span></div>
+      <div class="category-item"><div class="color-box" style="background-color: #91cc75;"></div><span>城区街道</span></div>
+      <div class="category-item"><div class="color-box" style="background-color: #fac858;"></div><span>郊区县域</span></div>
+      <div class="category-item"><div class="color-box" style="background-color: #ee6666;"></div><span>远郊区域</span></div>
+      <div class="category-item"><div class="color-box" style="background-color: #73c0de;"></div><span>山水地貌</span></div>
+      <div class="category-item"><div class="color-box" style="background-color: #3ba272;"></div><span>其他地点</span></div>
+    </div>
+    
+    <div class="row network-controls">
+      <div class="col-md-6 mb-2">
+        <div class="input-group">
+          <input type="text" id="searchInput" class="form-control" placeholder="搜索地名...">
+          <button class="btn btn-primary" id="searchBtn">搜索</button>
+        </div>
+      </div>
+      <div class="col-md-6 mb-2 text-md-end">
+        <button class="btn btn-outline-secondary me-2" id="resetBtn">重置视图</button>
+        <div class="btn-group">
+          <button class="btn btn-outline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            分类筛选
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#" data-category="all">全部类别</a></li>
+            <li><a class="dropdown-item" href="#" data-category="0">景点名胜</a></li>
+            <li><a class="dropdown-item" href="#" data-category="1">城区街道</a></li>
+            <li><a class="dropdown-item" href="#" data-category="2">郊区县域</a></li>
+            <li><a class="dropdown-item" href="#" data-category="3">远郊区域</a></li>
+            <li><a class="dropdown-item" href="#" data-category="4">山水地貌</a></li>
+            <li><a class="dropdown-item" href="#" data-category="5">其他地点</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="network-container" id="networkChart"></div>
+  </section>
+   
+<!-- 热门地名 -->
+<section class="mb-5">
+  <h2 class="text-center mb-4">热门地名</h2>
+  <div class="row">
+    <div class="col-md-3 mb-4">
+      <div class="card feature-card">
+        <div class="card-body text-center">
+          <h3>黄河</h3>
+          <p><span class="hsk-badge hsk-2">HSK 2级</span></p>
+          <p class="text-muted">huáng hé</p>
+          <a href="place.html?name=黄河" class="btn btn-sm btn-outline-primary">查看详情</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-4">
+      <div class="card feature-card">
+        <div class="card-body text-center">
+          <h3>城关区</h3>
+          <p><span class="hsk-badge hsk-3">HSK 3级</span></p>
+          <p class="text-muted">chéng guān qū</p>
+          <a href="place.html?name=城关区" class="btn btn-sm btn-outline-primary">查看详情</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-4">
+      <div class="card feature-card">
+        <div class="card-body text-center">
+          <h3>白塔山</h3>
+          <p><span class="hsk-badge hsk-1">HSK 1级</span></p>
+          <p class="text-muted">bái tǎ shān</p>
+          <a href="place.html?name=白塔山" class="btn btn-sm btn-outline-primary">查看详情</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 mb-4">
+      <div class="card feature-card">
+        <div class="card-body text-center">
+          <h3>水墨丹霞</h3>
+          <p><span class="hsk-badge hsk-unknown">超纲</span></p>
+          <p class="text-muted">shuǐ mò dān xiá</p>
+          <a href="place.html?name=水墨丹霞" class="btn btn-sm btn-outline-primary">查看详情</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-3">
+    <a href="#" class="btn btn-primary">查看更多地名</a>
+  </div>
+</section>
+
+<!-- HSK级别分类 -->
+<section id="hsk-levels" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">按HSK汉字级别浏览</h2>
+    <div class="row g-4">
+      <!-- HSK 1级 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-header bg-primary text-white">
+            <h3 class="h5 mb-0">HSK 1级</h3>
+          </div>
+          <div class="card-body">
+            <div class="d-flex flex-wrap gap-2">
+              <a href="character.html?char=水" class="btn btn-outline-primary btn-sm">水</a>
+              <a href="character.html?char=山" class="btn btn-outline-primary btn-sm">山</a>
+              <a href="character.html?char=白" class="btn btn-outline-primary btn-sm">白</a>
+              <a href="character.html?char=门" class="btn btn-outline-primary btn-sm">门</a>
+              <a href="character.html?char=口" class="btn btn-outline-primary btn-sm">口</a>
+              <a href="character.html?char=东" class="btn btn-outline-primary btn-sm">东</a>
+              <a href="character.html?char=西" class="btn btn-outline-primary btn-sm">西</a>
+            </div>
+          </div>
+          <div class="card-footer bg-transparent">
+            <small class="text-muted">基础常用汉字，适合初学者</small>
+          </div>
+        </div>
+      </div>
+      <!-- HSK 2级 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-header bg-success text-white">
+            <h3 class="h5 mb-0">HSK 2级</h3>
+          </div>
+          <div class="card-body">
+            <div class="d-flex flex-wrap gap-2">
+              <a href="character.html?char=黄" class="btn btn-outline-success btn-sm">黄</a>
+              <a href="character.html?char=河" class="btn btn-outline-success btn-sm">河</a>
+              <a href="character.html?char=路" class="btn btn-outline-success btn-sm">路</a>
+              <a href="character.html?char=桥" class="btn btn-outline-success btn-sm">桥</a>
+              <a href="character.html?char=花" class="btn btn-outline-success btn-sm">花</a>
+              <a href="character.html?char=园" class="btn btn-outline-success btn-sm">园</a>
+              <a href="character.html?char=街" class="btn btn-outline-success btn-sm">街</a>
+            </div>
+          </div>
+          <div class="card-footer bg-transparent">
+            <small class="text-muted">进阶常用汉字，适合基础学习者</small>
+          </div>
+        </div>
+      </div>
+      <!-- HSK 3级 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-header bg-warning">
+            <h3 class="h5 mb-0">HSK 3级</h3>
+          </div>
+          <div class="card-body">
+            <div class="d-flex flex-wrap gap-2">
+              <a href="character.html?char=城" class="btn btn-outline-warning btn-sm">城</a>
+              <a href="character.html?char=区" class="btn btn-outline-warning btn-sm">区</a>
+              <a href="character.html?char=广" class="btn btn-outline-warning btn-sm">广</a>
+              <a href="character.html?char=场" class="btn btn-outline-warning btn-sm">场</a>
+              <a href="character.html?char=寺" class="btn btn-outline-warning btn-sm">寺</a>
+              <a href="character.html?char=塔" class="btn btn-outline-warning btn-sm">塔</a>
+              <a href="character.html?char=湖" class="btn btn-outline-warning btn-sm">湖</a>
+            </div>
+          </div>
+          <div class="card-footer bg-transparent">
+            <small class="text-muted">中级汉字，适合中级学习者</small>
+          </div>
+        </div>
+      </div>
+      <!-- HSK 4-6级 -->
+      <div class="col-md-12">
+        <div class="card shadow-sm">
+          <div class="card-header bg-danger text-white">
+            <h3 class="h5 mb-0">HSK 4-6级</h3>
+          </div>
+          <div class="card-body">
+            <div class="d-flex flex-wrap gap-2">
+              <a href="character.html?char=峡" class="btn btn-outline-danger btn-sm">峡</a>
+              <a href="character.html?char=丹" class="btn btn-outline-danger btn-sm">丹</a>
+              <a href="character.html?char=霞" class="btn btn-outline-danger btn-sm">霞</a>
+              <a href="character.html?char=墨" class="btn btn-outline-danger btn-sm">墨</a>
+              <a href="character.html?char=泉" class="btn btn-outline-danger btn-sm">泉</a>
+              <a href="character.html?char=榆" class="btn btn-outline-danger btn-sm">榆</a>
+              <a href="character.html?char=兰" class="btn btn-outline-danger btn-sm">兰</a>
+              <a href="character.html?char=州" class="btn btn-outline-danger btn-sm">州</a>
+              <a href="character.html?char=滨" class="btn btn-outline-danger btn-sm">滨</a>
+              <a href="character.html?char=沟" class="btn btn-outline-danger btn-sm">沟</a>
+              <a href="character.html?char=峰" class="btn btn-outline-danger btn-sm">峰</a>
+              <a href="character.html?char=阁" class="btn btn-outline-danger btn-sm">阁</a>
+              <a href="character.html?char=楼" class="btn btn-outline-danger btn-sm">楼</a>
+              <a href="character.html?char=殿" class="btn btn-outline-danger btn-sm">殿</a>
+            </div>
+          </div>
+          <div class="card-footer bg-transparent">
+            <small class="text-muted">高级汉字，适合进阶学习者</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  <!-- 关于项目 -->
+  <section id="about" class="container mb-5">
+    <h2 class="text-center mb-4">关于项目</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <p>本项目基于兰州主要地名的语义关联数据，采用现代Web可视化技术，为国际中文学习者和教师提供直观、交互的地名学习辅助工具。</p>
+        <p>数据来源于公开地理信息和网络文本挖掘，力求准确、丰富，欢迎反馈建议。</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center">
+    <div>© 2025 兰州地名学习 | 国际中文教学</div>
+  </footer>
+
+  <!-- ECharts & Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // 分类颜色
+    const categoryColors = ['#5470c6','#91cc75','#fac858','#ee6666','#73c0de','#3ba272'];
+    const categoryNames = [
+      '景点名胜',
+      '城区街道',
+      '郊区县域',
+      '远郊区域',
+      '山水地貌',
+      '其他地点'
+    ];
+
+    let rawData = null;
+    let filteredNodes = null, filteredLinks = null;
+    let chart = null;
+
+    // 网络图渲染
+    function renderNetwork(nodes, links, highlightName) {
+      if (!chart) chart = echarts.init(document.getElementById('networkChart'));
+      let categories = [];
+      for(let i=0;i<categoryNames.length;i++) {
+        categories.push({name: categoryNames[i], itemStyle:{color:categoryColors[i]}});
+      }
+      let showNodes = nodes.map(n => ({
+        ...n,
+        symbolSize: 20 + n.centrality*40,
+        value: n.centrality,
+        category: n.category,
+        label: {show: n.centrality > 0.15, fontWeight:'bold'},
+        itemStyle: highlightName && n.name===highlightName ? {borderColor:'#d35400', borderWidth:4} : {}
+      }));
+      let showLinks = links;
+      let option = {
+        tooltip: {
+          formatter: (params) => {
+            if(params.dataType==='node') {
+              return `<b>${params.data.name}</b><br>中心度：${params.data.centrality.toFixed(3)}<br>类别：${categoryNames[params.data.category]||'未知'}`;
+            }
+            return '';
+          }
+        },
+        legend: [{ data: categoryNames }],
+        series: [{
+          type: 'graph',
+          layout: 'force',
+          data: showNodes,
+          links: showLinks,
+          categories: categories,
+          roam: true,
+          label: { position: 'right', formatter: '{b}' },
+          force: { repulsion: 220, edgeLength: [30,120] },
+          edgeSymbol: ['none','arrow'],
+          lineStyle: { color: 'source', width: 1.2, opacity: 0.7 }
+        }]
+      };
+      chart.setOption(option);
+// 添加点击事件
+  chart.off('click'); // 先解绑，避免多次绑定
+  chart.on('click', function(params) {
+    if(params.dataType === 'node') {
+      window.location.href = `place.html?name=${encodeURIComponent(params.data.name)}`;
+    }
+  });
+
+
+      window.addEventListener('resize', ()=>{chart.resize();});
+    }
+
+    
+    // 分类筛选
+    function filterByCategory(cat) {
+      if(cat==='all') {
+        filteredNodes = rawData.nodes;
+        filteredLinks = rawData.links;
+      } else {
+        let catNum = parseInt(cat);
+        let nodeSet = new Set(rawData.nodes.filter(n=>n.category===catNum).map(n=>n.name));
+        filteredNodes = rawData.nodes.filter(n=>nodeSet.has(n.name));
+        filteredLinks = rawData.links.filter(l=>nodeSet.has(l.source) && nodeSet.has(l.target));
+      }
+      renderNetwork(filteredNodes, filteredLinks);
+
+    }
+
+    // 搜索功能
+    function searchPlace(keyword) {
+      if(!keyword) return;
+      let node = rawData.nodes.find(n=>n.name===keyword.trim());
+      if(node) {
+        renderNetwork(filteredNodes, filteredLinks, node.name);
+        // 自动滚动到网络区
+        document.getElementById('networkChart').scrollIntoView({behavior:'smooth'});
+      } else {
+        alert('未找到该地名！');
+      }
+    }
+
+    // 页面加载
+    fetch('./static/place_network_top100.json')
+      .then(res => res.json())
+      .then(data => {
+        rawData = data;
+        filteredNodes = data.nodes;
+        filteredLinks = data.links;
+        renderNetwork(filteredNodes, filteredLinks);
+
+      });
+
+    // 事件绑定
+    document.getElementById('searchBtn').onclick = function(){
+      let kw = document.getElementById('searchInput').value;
+      searchPlace(kw);
+    };
+    document.getElementById('searchInput').addEventListener('keydown',function(e){
+      if(e.key==='Enter'){
+        searchPlace(this.value);
+      }
+    });
+    document.getElementById('resetBtn').onclick = function(){
+      filterByCategory('all');
+      document.getElementById('searchInput').value = '';
+    };
+    document.querySelectorAll('.dropdown-item').forEach(item=>{
+      item.onclick = function(){
+        let cat = this.getAttribute('data-category');
+        filterByCategory(cat);
+      }
+    });
+  </script>
+</body>
+</html>
+
+<script>
+fetch('./static/place_network_top100.json')
+  .then(res => res.json())
+  .then(data => {
+    // 只做测试，把第一个节点名显示到页面
+    document.body.insertAdjacentHTML('beforeend', `<div>第一个地名：${data.nodes[0].name}</div>`);
+    // 这里应该调用你自己的渲染函数
+    // renderNetworkGraph(data.nodes);
+  })
+  .catch(err => {
+    document.body.insertAdjacentHTML('beforeend', `<div style="color:red">加载数据出错：${err}</div>`);
+  });
+</script>
