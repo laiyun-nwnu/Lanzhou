@@ -84,6 +84,8 @@
    ```
 
 ### 第三步：启用GitHub Pages
+**重要：GitHub仓库必须设置为公开（Public）才能使用GitHub Pages**
+
 1. 进入GitHub仓库页面
 2. 点击"Settings" → "Pages"
 3. 在"Build and deployment"部分：
@@ -91,11 +93,30 @@
    - Branch: 选择"main"分支和"/ (root)"文件夹
 4. 点击"Save"
 
+如果看不到Pages选项，请检查：
+- 仓库是否为公开（Public）状态
+- 如果使用免费账户，私有仓库无法使用GitHub Pages
+- 考虑升级到GitHub Pro或使用其他部署平台
+
 ### 第四步：访问网站
 等待几分钟后，您的网站将在以下地址可用：
 ```
 https://你的用户名.github.io/仓库名/
 ```
+
+**重要：URL格式说明**
+- 正确格式：`https://用户名.github.io/仓库名/`
+- 错误格式：`https://用户名.github.io/仓库名/子文件夹/`
+
+如果您的仓库名为 `Lanzhou`，正确地址应为：
+```
+https://laiyun-nwnu.github.io/Lanzhou/
+```
+
+如果仍然遇到404错误，请检查：
+1. 仓库是否为公开（Public）状态
+2. GitHub Pages是否已成功启用
+3. 等待几分钟让GitHub完成部署
 
 ## 功能特点
 

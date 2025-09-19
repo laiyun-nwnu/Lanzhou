@@ -60,6 +60,10 @@
     .hsk-5 { background-color: #f9f0ff; color: #531dab; }
     .hsk-6 { background-color: #e6fffb; color: #006d75; }
     .hsk-unknown { background-color: #f5f5f5; color: #595959; }
+    .translation {
+      font-style: italic;
+      color: #555;
+    }
     .stroke-order-container {
       max-height: 180px;
       min-height: 120px;
@@ -186,6 +190,14 @@
                   <th>部首：</th>
                   <td id="info-radical">加载中...</td>
                 </tr>
+                <tr>
+                  <th>英文：</th>
+                  <td id="info-en">加载中...</td>
+                </tr>
+                <tr>
+                  <th>俄语：</th>
+                  <td id="info-ru">加载中...</td>
+                </tr>
               </table>
             </div>
           </div>
@@ -278,8 +290,8 @@
     }
 
     async function loadCharacterDetail() {
-      const char = getQueryParam('char');
-      document.getElementById('char-in-title').innerText = char || '...';
+      const char = getQueryParam('char') || '黄';  // 默认显示"黄"字
+      document.getElementById('char-in-title').innerText = char;
 
       // 调试信息（可选显示）
       if (location.search.includes('debug')) {
@@ -293,7 +305,7 @@
       // 读取汉字信息
       let data;
       try {
-        const res = await fetch('./static/character_detail.json');
+        const res = await fetch('static/character_detail.json');
         data = await res.json();
       } catch (e) {
         document.getElementById('character-display').innerText = '数据加载失败';
@@ -323,6 +335,8 @@
         `<span class="hsk-badge ${getHSKBadge(info.level)}">${info.level || '-'}</span>`;
       document.getElementById('info-strokes').innerText = info.strokes || '-';
       document.getElementById('info-radical').innerText = info.radical || '-';
+      document.getElementById('info-en').innerText = info.translations?.en || '无翻译';
+      document.getElementById('info-ru').innerText = info.translations?.ru || '无翻译';
 
       // 笔顺动画
       if (info.stroke_gif) {
@@ -343,7 +357,7 @@
       // 读取所有地名并筛选包含该汉字的
       let places = [];
       try {
-        const res = await fetch('./static/place_data.json');
+        const res = await fetch('static/place_data.json');
         const placeData = await res.json();
         places = Object.keys(placeData).filter(place => place.includes(char));
       } catch (e) {
@@ -351,18 +365,20 @@
       }
 
       if (places.length > 0) {
-        document.getElementById('related-places-container').innerHTML =
-          places.map(place => `
-            <div class="col-md-3 mb-3">
-              <a href="place.html?name=${encodeURIComponent(place)}" class="text-decoration-none text-dark">
-                <div class="card place-card">
-                  <div class="card-body text-center">
-                    <h5 class="card-title">${place}</h5>
+        const placeRes = await fetch('static/place_data.json');
+        const placeData = await placeRes.json();
+        document.getElementById('related-places-container').innerHTML = places.map(place => `
+              <div class="col-md-3 mb-3">
+                <a href="place.html?name=${encodeURIComponent(place)}" class="text-decoration-none text-dark">
+                  <div class="card place-card">
+                    <div class="card-body text-center">
+                      <h5 class="card-title">${place}</h5>
+                      <p class="text-muted small">${placeData[place]?.pinyin || ''}</p>
+                    </div>
                   </div>
-                </div>
-              </a>
-            </div>
-          `).join('');
+                </a>
+              </div>
+            `).join('');;
       } else {
         document.getElementById('related-places-container').innerHTML =
           '<div class="col-12 text-center"><p>暂无相关地名</p></div>';

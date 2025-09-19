@@ -163,27 +163,68 @@
     }
     
     // 渲染包含的汉字
-    function renderCharacters(name) {
+    async function renderCharacters(name) {
       const charactersContainer = document.getElementById('characters-list');
       charactersContainer.innerHTML = '';
-      // 优先用 placeData 里的 hanzi 字段
-      const place = placeData[name];
-      let characters = [];
-      if (place && place.hanzi && Array.isArray(place.hanzi)) {
-        characters = place.hanzi;
-      } else {
-        characters = name.split('');
+      
+      // 强制拆分所有字符，确保每个汉字都显示
+      const characters = [];
+      for (const char of name) {
+        if (char.trim() !== '') {
+          characters.push(char);
+        }
       }
+      
+      // 调试日志（完成后可删除）
+      console.log('处理地名:', name, '拆分结果:', characters);
+
+      // 加载汉字数据
+      let charData = {};
+      try {
+        const res = await fetch('static/character_detail.json');
+        charData = await res.json();
+      } catch (e) {
+        console.error('加载汉字数据失败:', e);
+      }
+
       characters.forEach(char => {
+        // 创建卡片容器
+        const cardContainer = document.createElement('div');
+        cardContainer.style.textAlign = 'center';
+        cardContainer.style.margin = '10px';
+        
+        // 拼音显示（卡片上方）
+        if (charData[char]?.pinyin) {
+          const pinyinDiv = document.createElement('div');
+          pinyinDiv.textContent = charData[char].pinyin;
+          pinyinDiv.style.fontSize = '0.9rem';
+          pinyinDiv.style.color = '#666';
+          pinyinDiv.style.marginBottom = '8px';
+          cardContainer.appendChild(pinyinDiv);
+        }
+        
+        // 汉字卡片
         const charItem = document.createElement('div');
         charItem.className = 'character-item';
         charItem.textContent = char;
+        charItem.style.display = 'flex';
+        charItem.style.justifyContent = 'center';
+        charItem.style.alignItems = 'center';
+        cardContainer.appendChild(charItem);
+        
+        // 点击事件
+        charItem.onclick = function() {
+          window.location.href = `character.html?char=${char}`;
+        };
+        charactersContainer.appendChild(cardContainer);
+        
+        charItem.appendChild(innerDiv);
         charItem.onclick = function() {
           window.location.href = `character.html?char=${char}`;
         };
         charactersContainer.appendChild(charItem);
       });
-}
+    }
     
     // 渲染语义网络
     function renderSemanticNetwork(name, networkData) {
