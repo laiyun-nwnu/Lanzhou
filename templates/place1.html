@@ -402,13 +402,35 @@
           emphasis: {
             focus: 'adjacency',
             lineStyle: { width: 5 }
+          },
+          selectedMode: 'single',
+          select: {
+            itemStyle: {
+              borderColor: '#588157',
+              borderWidth: 2
+            }
           }
         }]
       };
 
       chart.setOption(option);
+      
+      // 添加节点点击事件
+      chart.on('click', function(params) {
+        if (params.dataType === 'node') {
+          window.location.href = `place.html?name=${params.data.name}`;
+        }
+      });
+      
       window.addEventListener('resize', function() {
         chart.resize();
+      });
+      
+      // 调试信息
+      console.log('语义网络初始化完成', {
+        当前节点: name,
+        相关节点数: relatedNodes.length,
+        相关连接数: relatedLinks.length
       });
     }
 
@@ -439,22 +461,53 @@
       
       const top5Links = relatedLinks.slice(0, 5);
 
-      top5Links.forEach(link => {
+      // 显示前10个关联地名
+      const topLinks = relatedLinks.slice(0, 10);
+      
+      if (topLinks.length === 0) {
+        container.innerHTML = '<p class="text-muted">暂无关联地名数据</p>';
+        return;
+      }
+      
+      topLinks.forEach(link => {
         const otherNodeName = link.source === name ? link.target : link.source;
         const strengthRaw = (typeof link.value === 'number' ? link.value : link.weight);
         const strength = (typeof strengthRaw === 'number' && !isNaN(strengthRaw))
           ? strengthRaw.toFixed(2)
           : '未知';
+          
         const linkItem = document.createElement('a');
         linkItem.className = 'related-place-item';
-        linkItem.href = `place.html?name=${otherNodeName}`;
+        linkItem.href = `place.html?name=${encodeURIComponent(otherNodeName)}`;
         linkItem.innerHTML = `
           <div class="d-flex justify-content-between align-items-center">
             <strong>${otherNodeName}</strong>
             <span class="badge bg-secondary">关联度: ${strength}</span>
           </div>
         `;
+        
+        // 添加悬停效果
+        linkItem.addEventListener('mouseenter', function() {
+          chart.dispatchAction({
+            type: 'highlight',
+            name: otherNodeName
+          });
+        });
+        
+        linkItem.addEventListener('mouseleave', function() {
+          chart.dispatchAction({
+            type: 'downplay',
+            name: otherNodeName
+          });
+        });
+        
         container.appendChild(linkItem);
+      });
+      
+      // 调试信息
+      console.log('关联地名列表渲染完成', {
+        当前节点: name,
+        关联地名数: topLinks.length
       });
     }
   </script>

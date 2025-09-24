@@ -177,8 +177,8 @@
     "stroke_gif": "templates/hanzi_gif/桥.gif",
     "audio": "templates/fayindata/qiao2.mp3",
     "translations": {
-      "en": "Qiao2",
-      "ru": "Qiao2"
+      "en": "Bridge",
+      "ru": "Мост"
     }
   },
   "五": {
@@ -437,8 +437,8 @@
     "stroke_gif": "templates/hanzi_gif/楼.gif",
     "audio": "templates/fayindata/lou2.mp3",
     "translations": {
-      "en": "Lou2",
-      "ru": "Lou2"
+      "en": "Building",
+      "ru": "Здание"
     }
   },
   "州": {

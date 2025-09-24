@@ -1,0 +1,2218 @@
+{
+  "站": {
+    "pinyin": "zhàn",
+    "pinyin_number": "zhan4",
+    "level": "一级",
+    "radical": "立",
+    "strokes": "10画",
+    "stroke_gif": "templates/hanzi_gif/站.gif",
+    "audio": "templates/fayindata/zhan4.mp3",
+    "translations": {
+      "en": "Station",
+      "ru": "Станция"
+    }
+  },
+  "植": {
+    "pinyin": "zhí",
+    "pinyin_number": "zhi2",
+    "level": "三级",
+    "radical": "木",
+    "strokes": "12画",
+    "stroke_gif": "templates/hanzi_gif/植.gif",
+    "audio": "templates/fayindata/zhi2.mp3",
+    "translations": {
+      "en": "Plant, vegetation",
+      "ru": "Растение, растительность"
+    },
+    "places": ["植物园"],
+    "tips": "常用于表示植物、种植等含义"
+  },
+  "墨": {
+    "pinyin": "mò",
+    "pinyin_number": "mo4", 
+    "level": "五级",
+    "radical": "黑",
+    "strokes": "15画",
+    "stroke_gif": "templates/hanzi_gif/墨.gif",
+    "audio": "templates/fayindata/mo4.mp3",
+    "translations": {
+      "en": "Ink, black",
+      "ru": "Чернила, черный"
+    },
+    "places": ["墨家", "墨脱县"],
+    "tips": "常用于表示墨水、墨色等含义"
+  },
+  "张": {
+    "pinyin": "zhāng",
+    "pinyin_number": "zhang1",
+    "level": "一级",
+    "radical": "弓",
+    "strokes": "11画",
+    "stroke_gif": "templates/hanzi_gif/张.gif",
+    "audio": "templates/fayindata/zhang1.mp3",
+    "translations": {
+      "en": "Sheet",
+      "ru": "Лист"
+    }
+  },
+  "榆": {
+    "pinyin": "yú",
+    "pinyin_number": "yu2",
+    "level": "高等",
+    "radical": "木",
+    "strokes": "13画",
+    "stroke_gif": "templates/hanzi_gif/榆.gif",
+    "audio": "templates/fayindata/yu2.mp3",
+    "translations": {
+      "en": "Elm",
+      "ru": "Вяз"
+    }
+  },
+  "园": {
+    "pinyin": "yuán",
+    "pinyin_number": "yuan2",
+    "level": "一级",
+    "radical": "囗",
+    "strokes": "7画",
+    "stroke_gif": "templates/hanzi_gif/园.gif",
+    "audio": "templates/fayindata/yuan2.mp3",
+    "translations": {
+      "en": "Garden",
+      "ru": "Сад"
+    }
+  },
+  "月": {
+    "pinyin": "yuè",
+    "pinyin_number": "yue4",
+    "level": "一级",
+    "radical": "月",
+    "strokes": "4画",
+    "stroke_gif": "templates/hanzi_gif/月.gif",
+    "audio": "templates/fayindata/yue4.mp3",
+    "translations": {
+      "en": "Moon",
+      "ru": "Луна"
+    }
+  },
+  "悦": {
+    "pinyin": "yuè",
+    "pinyin_number": "yue4",
+    "level": "二级",
+    "radical": "忄",
+    "strokes": "10画",
+    "stroke_gif": "templates/hanzi_gif/悦.gif",
+    "audio": "templates/fayindata/yue4.mp3",
+    "translations": {
+      "en": "Happy",
+      "ru": "Счастливый"
+    }
+  },
+  "云": {
+    "pinyin": "yún",
+    "pinyin_number": "yun2",
+    "level": "一级",
+    "radical": "二",
+    "strokes": "4画",
+    "stroke_gif": "templates/hanzi_gif/云.gif",
+    "audio": "templates/fayindata/yun2.mp3",
+    "translations": {
+      "en": "Cloud",
+      "ru": "Облако"
+    }
+  },
+  "衣": {
+    "pinyin": "yī",
+    "pinyin_number": "yi1",
+    "level": "一级",
+    "radical": "衣",
+    "strokes": "6画",
+    "stroke_gif": "templates/hanzi_gif/衣.gif",
+    "audio": "templates/fayindata/yi1.mp3",
+    "translations": {
+      "en": "Clothes",
+      "ru": "Одежда"
+    }
+  },
+  "艺": {
+    "pinyin": "yì",
+    "pinyin_number": "yi4",
+    "level": "一级",
+    "radical": "艹",
+    "strokes": "4画",
+    "stroke_gif": "templates/hanzi_gif/艺.gif",
+    "audio": "templates/fayindata/yi4.mp3",
+    "translations": {
+      "en": "Art",
+      "ru": "Искусство"
+    }
+  },
+  "因": {
+    "pinyin": "yīn",
+    "pinyin_number": "yin1",
+    "level": "一级",
+    "radical": "囗",
+    "strokes": "6画",
+    "stroke_gif": "templates/hanzi_gif/因.gif",
+    "audio": "templates/fayindata/yin1.mp3",
+    "translations": {
+      "en": "Cause",
+      "ru": "Причина"
+    }
+  },
+  "银": {
+    "pinyin": "yín",
+    "pinyin_number": "yin2",
+    "level": "一级",
+    "radical": "钅",
+    "strokes": "11画",
+    "stroke_gif": "templates/hanzi_gif/银.gif",
+    "audio": "templates/fayindata/yin2.mp3",
+    "translations": {
+      "en": "Silver",
+      "ru": "Серебро"
+    }
+  },
+  "永": {
+    "pinyin": "yǒng",
+    "pinyin_number": "yong3",
+    "level": "一级",
+    "radical": "水",
+    "strokes": "5画",
+    "stroke_gif": "templates/hanzi_gif/永.gif",
+    "audio": "templates/fayindata/yong3.mp3",
+    "translations": {
+      "en": "Forever",
+      "ru": "Навсегда"
+    }
+  },
+  "沿": {
+    "pinyin": "yán",
+    "pinyin_number": "yan2",
+    "level": "二级",
+    "radical": "氵",
+    "strokes": "8画",
+    "stroke_gif": "templates/hanzi_gif/沿.gif",
+    "audio": "templates/fayindata/yan2.mp3",
+    "translations": {
+      "en": "Along",
+      "ru": "Вдоль"
+    }
+  },
+  "雁": {
+    "pinyin": "yàn",
+    "pinyin_number": "yan4",
+    "level": "高等",
+    "radical": "隹",
+    "strokes": "12画",
+    "stroke_gif": "templates/hanzi_gif/雁.gif",
+    "audio": "templates/fayindata/yan4.mp3",
+    "translations": {
+      "en": "Wild goose",
+      "ru": "Дикий гусь"
+    }
+  },
+  "阳": {
+    "pinyin": "yáng",
+    "pinyin_number": "yang2",
+    "level": "一级",
+    "radical": "阝",
+    "strokes": "6画",
+    "stroke_gif": "templates/hanzi_gif/阳.gif",
+    "audio": "templates/fayindata/yang2.mp3",
+    "translations": {
+      "en": "Sun",
+      "ru": "Солнце"
+    }
+  },
+  "掖": {
+    "pinyin": "yè",
+    "pinyin_number": "ye4",
+    "level": "高等",
+    "radical": "扌",
+    "strokes": "11画",
+    "stroke_gif": "templates/hanzi_gif/掖.gif",
+    "audio": "templates/fayindata/ye4.mp3",
+    "translations": {
+      "en": "Tuck in",
+      "ru": "Заправлять"
+    }
+  },
+  "野": {
+    "pinyin": "yě",
+    "pinyin_number": "ye3",
+    "level": "二级",
+    "radical": "里",
+    "strokes": "11画",
+    "stroke_gif": "templates/hanzi_gif/野.gif",
+    "audio": "templates/fayindata/ye3.mp3",
+    "translations": {
+      "en": "Wild",
+      "ru": "Дикий"
+    }
+  },
+  "新": {
+    "pinyin": "xīn",
+    "pinyin_number": "xin1",
+    "level": "一级",
+    "radical": "斤",
+    "strokes": "13画",
+    "stroke_gif": "templates/hanzi_gif/新.gif",
+    "audio": "templates/fayindata/xin1.mp3",
+    "translations": {
+      "en": "New",
+      "ru": "Новый"
+    }
+  },
+  "兴": {
+    "pinyin": "xīng",
+    "pinyin_number": "xing1",
+    "level": "一级",
+    "radical": "八",
+    "strokes": "6画",
+    "stroke_gif": "templates/hanzi_gif/兴.gif",
+    "audio": "templates/fayindata/xing1.mp3",
+    "translations": {
+      "en": "Prosper",
+      "ru": "Процветать"
+    }
+  },
+  "徐": {
+    "pinyin": "xú",
+    "pinyin_number": "xu2",
+    "level": "二级",
+    "radical": "彳",
+    "strokes": "10画",
+    "stroke_gif": "templates/hanzi_gif/徐.gif",
+    "audio": "templates/fayindata/xu2.mp3",
+    "translations": {
+      "en": "Slowly",
+      "ru": "Медленно"
+    }
+  },
+  "学": {
+    "pinyin": "xué",
+    "pinyin_number": "xue2",
+    "level": "一级",
+    "radical": "子",
+    "strokes": "8画",
+    "stroke_gif": "templates/hanzi_gif/学.gif",
+    "audio": "templates/fayindata/xue2.mp3",
+    "translations": {
+      "en": "Learn",
+      "ru": "Учиться"
+    }
+  },
+  "娅": {
+    "pinyin": "yà",
+    "pinyin_number": "ya4",
+    "level": "高等",
+    "radical": "女",
+    "strokes": "9画",
+    "stroke_gif": "templates/hanzi_gif/娅.gif",
+    "audio": "templates/fayindata/ya4.mp3",
+    "translations": {
+      "en": "Sister-in-law",
+      "ru": "Золовка"
+    }
+  },
+  "县": {
+    "pinyin": "xiàn",
+    "pinyin_number": "xian4",
+    "level": "二级",
+    "radical": "厶",
+    "strokes": "7画",
+    "stroke_gif": "templates/hanzi_gif/县.gif",
+    "audio": "templates/fayindata/xian4.mp3",
+    "translations": {
+      "en": "County",
+      "ru": "Уезд"
+    }
+  },
+  "巷": {
+    "pinyin": "xiàng",
+    "pinyin_number": "xiang4",
+    "level": "二级",
+    "radical": "巳",
+    "strokes": "9画",
+    "stroke_gif": "templates/hanzi_gif/巷.gif",
+    "audio": "templates/fayindata/xiang4.mp3",
+    "translations": {
+      "en": "Lane",
+      "ru": "Переулок"
+    }
+  },
+  "象": {
+    "pinyin": "xiàng",
+    "pinyin_number": "xiang4",
+    "level": "一级",
+    "radical": "豕",
+    "strokes": "11画",
+    "stroke_gif": "templates/hanzi_gif/象.gif",
+    "audio": "templates/fayindata/xiang4.mp3",
+    "translations": {
+      "en": "Elephant",
+      "ru": "Слон"
+    }
+  },
+  "小": {
+    "pinyin": "xiǎo",
+    "pinyin_number": "xiao3",
+    "level": "一级",
+    "radical": "小",
+    "strokes": "3画",
+    "stroke_gif": "templates/hanzi_gif/小.gif",
+    "audio": "templates/fayindata/xiao3.mp3",
+    "translations": {
+      "en": "Small",
+      "ru": "Маленький"
+    }
+  },
+  "心": {
+    "pinyin": "xīn",
+    "pinyin_number": "xin1",
+    "level": "一级",
+    "radical": "心",
+    "strokes": "4画",
+    "stroke_gif": "templates/hanzi_gif/心.gif",
+    "audio": "templates/fayindata/xin1.mp3",
+    "translations": {
+      "en": "Heart",
+      "ru": "Сердце"
+    }
+  },
+  "五": {
+    "pinyin": "wǔ",
+    "pinyin_number": "wu3",
+    "level": "一级",
+    "radical": "二",
+    "strokes": "4画",
+    "stroke_gif": "templates/hanzi_gif/五.gif",
+    "audio": "templates/fayindata/wu3.mp3",
+    "translations": {
+      "en": "Five",
+      "ru": "Пять"
+    }
+  },
+  "物": {
+    "pinyin": "wù",
+    "pinyin_number": "wu4",
+    "level": "一级",
+    "radical": "牛",
+    "strokes": "8画",
+    "stroke_gif": "templates/hanzi_gif/物.gif",
+    "audio": "templates/fayindata/wu4.mp3",
+    "translations": {
+      "en": "Thing",
+      "ru": "Вещь"
+    }
+  },
+  "西": {
+    "pinyin": "xī",
+    "pinyin_number": "xi1",
+    "level": "一级",
+    "radical": "覀",
+    "strokes": "6画",
+    "stroke_gif": "templates/hanzi_gif/西.gif",
+    "audio": "templates/fayindata/xi1.mp3",
+    "translations": {
+      "en": "West",
+      "ru": "Запад"
+    }
+  },
+  "峡": {
+    "pinyin": "xiá",
+    "pinyin_number": "xia2",
+    "level": "二级",
+    "radical": "山",
+    "strokes": "9画",
+    "stroke_gif": "templates/hanzi_gif/峡.gif",
+    "audio": "templates/fayindata/xia2.mp3",
+    "translations": {
+      "en": "Gorge",
+      "ru": "Ущелье"
+    }
+  },
+  "霞": {
+    "pinyin": "xiá",
+    "pinyin_number": "xia2",
+    "level": "二级",
+    "radical": "雨",
+    "strokes": "17画",
+    "stroke_gif": "templates/hanzi_gif/霞.gif",
+    "audio": "templates/fayindata/xia2.mp3",
+    "translations": {
+      "en": "Rosy clouds",
+      "ru": "Розовые облака"
+    }
+  },
+  "王": {
+    "pinyin": "wáng",
+    "pinyin_number": "wang2",
+    "level": "一级",
+    "radical": "王",
+    "strokes": "4画",
+    "stroke_gif": "templates/hanzi_gif/王.gif",
+    "audio": "templates/fayindata/wang2.mp3",
+    "translations": {
+      "en": "King",
+      "ru": "Король"
+    }
+  },
+  "望": {
+    "pinyin": "wàng",
+    "pinyin_number": "wang4",
+    "level": "二级",
+    "radical": "月",
+    "strokes": "11画",
+    "stroke_gif": "templates/hanzi_gif/望.gif",
+    "audio": "templates/fayindata/wang4.mp3",
+    "translations": {
+      "en": "Hope",
+      "ru": "Надежда"
+    }
+  },
+  "文": {
+    "pinyin": "wén",
+    "pinyin_number": "wen2",
+    "level": "一级",
+    "radical": "文",
+    "strokes": "4画",
+    "stroke_gif": "templates/hanzi_gif/文.gif",
+    "audio": "templates/fayindata/wen2.mp3",
+    "translations": {
+      "en": "Culture",
+      "ru": "Культура"
+    }
+  },
+  "吾": {
+    "pinyin": "wú",
+    "pinyin_number": "wu2",
+    "level": "高等",
+    "radical": "口",
+    "strokes": "7画",
+    "stroke_gif": "templates/hanzi_gif/吾.gif",
+    "audio": "templates/fayindata/wu2.mp3",
+    "translations": {
+      "en": "I (archaic)",
+      "ru": "Я (архаичное)"
+    }
+  },
+  "梧": {
+    "pinyin": "wú",
+    "pinyin_number": "wu2",
+    "level": "高等",
+    "radical": "木",
+    "strokes": "11画",
+    "stroke_gif": "templates/hanzi_gif/梧.gif",
+    "audio": "templates/fayindata/wu2.mp3",
+    "translations": {
+      "en": "Chinese parasol tree",
+      "ru": "Китайское тюльпановое дерево"
+    }
+  },
+  "吐": {
+    "pinyin": "tǔ",
+    "pinyin_number": "tu3",
+    "level": "二级",
+    "radical": "口",
+    "strokes": "6画",
+    "stroke_gif": "templates/hanzi_gif/吐.gif",
+    "audio": "templates/fayindata/tu3.mp3",
+    "translations": {
+      "en": "Spit",
+      "ru": "Плевать"
+    }
+  },
+  "驮": {
+    "pinyin": "tuó",
+    "pinyin_number": "tuo2",
+    "level": "高等",
+    "radical": "马",
+    "strokes": "6画",
+    "stroke_gif": "templates/hanzi_gif/驮.gif",
+    "audio": "templates/fayindata/tuo2.mp3",
+    "translations": {
+      "en": "Carry on back",
+      "ru": "Нести на спине"
+    }
+  },
+  "驼": {
+    "pinyin": "tuó",
+    "pinyin_number": "tuo2",
+    "level": "高等",
+    "radical": "马",
+    "strokes": "8画",
+    "stroke_gif": "templates/hanzi_gif/驼.gif",
+    "audio": "templates/fayindata/tuo2.mp3",
+    "translations": {
+      "en": "Camel",
+      "ru": "Верблюд"
+    }
+  },
+  "湾": {
+    "pinyin": "wān",
+    "pinyin_number": "wan1",
+    "level": "二级",
+    "radical": "氵",
+    "strokes": "12画",
+    "stroke_gif": "templates/hanzi_gif/湾.gif",
+    "audio": "templates/fayindata/wan1.mp3",
+    "translations": {
+      "en": "Bay",
+      "ru": "Бухта"
+    }
+  },
+  "万": {
+    "pinyin": "wàn",
+    "pinyin_number": "wan4",
+    "level": "一级",
+    "radical": "一",
+    "strokes": "3画",
+    "stroke_gif": "templates/hanzi_gif/万.gif",
+    "audio": "templates/fayindata/wan4.mp3",
+    "translations": {
+      "en": "Ten thousand",
+      "ru": "Десять тысяч"
+    }
+  },
+  "肃": {
+    "pinyin": "sù",
+    "pinyin_number": "su4",
+    "level": "二级",
+    "radical": "肀",
+    "strokes": "8画",
+    "stroke_gif": "templates/hanzi_gif/肃.gif",
+    "audio": "templates/fayindata/su4.mp3",
+    "translations": {
+      "en": "Solemn",
+      "ru": "Торжественный"
+    }
+  },
+  "塔": {
+    "pinyin": "tǎ",
+    "pinyin_number": "ta3",
+    "level": "二级",
+    "radical": "土",
+    "strokes": "12画",
+    "stroke_gif": "templates/hanzi_gif/塔.gif",
+    "audio": "templates/fayindata/ta3.mp3",
+    "translations": {
+      "en": "Pagoda",
+      "ru": "Пагода"
+    }
+  },
+  "台": {
+    "pinyin": "tái",
+    "pinyin_number": "tai2",
+    "level": "一级",
+    "radical": "口",
+    "strokes": "5画",
+    "stroke_gif": "templates/hanzi_gif/台.gif",
+    "audio": "templates/fayindata/tai2.mp3",
+    "translations": {
+      "en": "Platform",
+      "ru": "Платформа"
+    }
+  },
+  "滩": {
+    "pinyin": "tān",
+    "pinyin_number": "tan1",
+    "level": "二级",
+    "radical": "氵",
+    "strokes": "13画",
+    "stroke_gif": "templates/hanzi_gif/滩.gif",
+    "audio": "templates/fayindata/tan1.mp3",
+    "translations": {
+      "en": "Beach",
+      "ru": "Пляж"
+    }
+  },
+  "天": {
+    "pinyin": "tiān",
+    "pinyin_number": "tian1",
+    "level": "一级",
+    "radical": "大",
+    "strokes": "4画",
+    "stroke_gif": "templates/hanzi_gif/天.gif",
+    "audio": "templates/fayindata/tian1.mp3",
+    "translations": {
+      "en": "Sky",
+      "ru": "Небо"
+    }
+  },
+  "寿": {
+    "pinyin": "shòu",
+    "pinyin_number": "shou4",
+    "level": "二级",
+    "radical": "寸",
+    "strokes": "7画",
+    "stroke_gif": "templates/hanzi_gif/寿.gif",
+    "audio": "templates/fayindata/shou4.mp3",
+    "translations": {
+      "en": "Longevity",
+      "ru": "Долголетие"
+    }
+  },
+  "术": {
+    "pinyin": "shù",
+    "pinyin_number": "shu4",
+    "level": "二级",
+    "radical": "木",
+    "strokes": "5画",
+    "stroke_gif": "templates/hanzi_gif/术.gif",
+    "audio": "templates/fayindata/shu4.mp3",
+    "translations": {
+      "en": "Art",
+      "ru": "Искусство"
+    }
+  },
+  "树": {
+    "pinyin": "shù",
+    "pinyin_number": "shu4",
+    "level": "一级",
+    "radical": "木",
+    "strokes": "9画",
+    "stroke_gif": "templates/hanzi_gif/树.gif",
+    "audio": "templates/fayindata/shu4.mp3",
+    "translations": {
+      "en": "Tree",
+      "ru": "Дерево"
+    }
+  },
+  "水": {
+    "pinyin": "shuǐ",
+    "pinyin_number": "shui3",
+    "level": "一级",
+    "radical": "水",
+    "strokes": "4画",
+    "stroke_gif": "templates/hanzi_gif/水.gif",
+    "audio": "templates/fayindata/shui3.mp3",
+    "translations": {
+      "en": "Water",
+      "ru": "Вода"
+    }
+  },
+  "寺": {
+    "pinyin": "sì",
+    "pinyin_number": "si4",
+    "level": "二级",
+    "radical": "寸",
+    "strokes": "6画",
+    "stroke_gif": "templates/hanzi_gif/寺.gif",
+    "audio": "templates/fayindata/si4.mp3",
+    "translations": {
+      "en": "Temple",
+      "ru": "Храм"
+    }
+  },
+  "生": {
+    "pinyin": "shēng",
+    "pinyin_number": "sheng1",
+    "level": "一级",
+    "radical": "生",
+    "strokes": "5画",
+    "stroke_gif": "templates/hanzi_gif/生.gif",
+    "audio": "templates/fayindata/sheng1.mp3",
+    "translations": {
+      "en": "Life",
+      "ru": "Жизнь"
+    }
+  },
+  "省": {
+    "pinyin": "shěng",
+    "pinyin_number": "sheng3",
+    "level": "二级",
+    "radical": "目",
+    "strokes": "9画",
+    "stroke_gif": "templates/hanzi_gif/省.gif",
+    "audio": "templates/fayindata/sheng3.mp3",
+    "translations": {
+      "en": "Province",
+      "ru": "Провинция"
+    }
+  },
+  "师": {
+    "pinyin": "shī",
+    "pinyin_number": "shi1",
+    "level": "二级",
+    "radical": "巾",
+    "strokes": "6画",
+    "stroke_gif": "templates/hanzi_gif/师.gif",
+    "audio": "templates/fayindata/shi1.mp3",
+    "translations": {
+      "en": "Teacher",
+      "ru": "Учитель"
+    }
+  },
+  "石": {
+    "pinyin": "shí",
+    "pinyin_number": "shi2",
+    "level": "一级",
+    "radical": "石",
+    "strokes": "5画",
+    "stroke_gif": "templates/hanzi_gif/石.gif",
+    "audio": "templates/fayindata/shi2.mp3",
+    "translations": {
+      "en": "Stone",
+      "ru": "Камень"
+    }
+  },
+  "市": {
+    "pinyin": "shì",
+    "pinyin_number": "shi4",
+    "level": "一级",
+    "radical": "巾",
+    "strokes": "5画",
+    "stroke_gif": "templates/hanzi_gif/市.gif",
+    "audio": "templates/fayindata/shi4.mp3",
+    "translations": {
+      "en": "City",
+      "ru": "Город"
+    }
+  },
+  "泉": {
+    "pinyin": "quán",
+    "pinyin_number": "quan2",
+    "level": "二级",
+    "radical": "水",
+    "strokes": "9画",
+    "stroke_gif": "templates/hanzi_gif/泉.gif",
+    "audio": "templates/fayindata/quan2.mp3",
+    "translations": {
+      "en": "Spring (water)",
+      "ru": "Родник"
+    }
+  },
+  "仁": {
+    "pinyin": "rén",
+    "pinyin_number": "ren2",
+    "level": "二级",
+    "radical": "亻",
+    "strokes": "4画",
+    "stroke_gif": "templates/hanzi_gif/仁.gif",
+    "audio": "templates/fayindata/ren2.mp3",
+    "translations": {
+      "en": "Benevolence",
+      "ru": "Доброта"
+    }
+  },
+  "三": {
+    "pinyin": "sān",
+    "pinyin_number": "san1",
+    "level": "一级",
+    "radical": "一",
+    "strokes": "3画",
+    "stroke_gif": "templates/hanzi_gif/三.gif",
+    "audio": "templates/fayindata/san1.mp3",
+    "translations": {
+      "en": "Three",
+      "ru": "Три"
+    }
+  },
+  "山": {
+    "pinyin": "shān",
+    "pinyin_number": "shan1",
+    "level": "一级",
+    "radical": "山",
+    "strokes": "3画",
+    "stroke_gif": "templates/hanzi_gif/山.gif",
+    "audio": "templates/fayindata/shan1.mp3",
+    "translations": {
+      "en": "Mountain",
+      "ru": "Гора"
+    }
+  },
+  "什": {
+    "pinyin": "shí",
+    "pinyin_number": "shi2",
+    "level": "二级",
+    "radical": "亻",
+    "strokes": "4画",
+    "stroke_gif": "templates/hanzi_gif/什.gif",
+    "audio": "templates/fayindata/shi2.mp3",
+    "translations": {
+      "en": "What",
+      "ru": "Что"
+    }
+  },
+  "秦": {
+    "pinyin": "qín",
+    "pinyin_number": "qin2",
+    "level": "二级",
+    "radical": "禾",
+    "strokes": "10画",
+    "stroke_gif": "templates/hanzi_gif/秦.gif",
+    "audio": "templates/fayindata/qin2.mp3",
+    "translations": {
+      "en": "Qin (dynasty)",
+      "ru": "Цинь (династия)"
+    }
+  },
+  "青": {
+    "pinyin": "qīng",
+    "pinyin_number": "qing1",
+    "level": "一级",
+    "radical": "青",
+    "strokes": "8画",
+    "stroke_gif": "templates/hanzi_gif/青.gif",
+    "audio": "templates/fayindata/qing1.mp3",
+    "translations": {
+      "en": "Blue/green",
+      "ru": "Синий/зелёный"
+    }
+  },
+  "晴": {
+    "pinyin": "qíng",
+    "pinyin_number": "qing2",
+    "level": "二级",
+    "radical": "日",
+    "strokes": "12画",
+    "stroke_gif": "templates/hanzi_gif/晴.gif",
+    "audio": "templates/fayindata/qing2.mp3",
+    "translations": {
+      "en": "Clear (weather)",
+      "ru": "Ясный (погода)"
+    }
+  },
+  "庆": {
+    "pinyin": "qìng",
+    "pinyin_number": "qing4",
+    "level": "二级",
+    "radical": "广",
+    "strokes": "6画",
+    "stroke_gif": "templates/hanzi_gif/庆.gif",
+    "audio": "templates/fayindata/qing4.mp3",
+    "translations": {
+      "en": "Celebrate",
+      "ru": "Праздновать"
+    }
+  },
+  "区": {
+    "pinyin": "qū",
+    "pinyin_number": "qu1",
+    "level": "一级",
+    "radical": "匸",
+    "strokes": "4画",
+    "stroke_gif": "templates/hanzi_gif/区.gif",
+    "audio": "templates/fayindata/qu1.mp3",
+    "translations": {
+      "en": "District",
+      "ru": "Район"
+    }
+  },
+  "屏": {
+    "pinyin": "píng",
+    "pinyin_number": "ping2",
+    "level": "二级",
+    "radical": "尸",
+    "strokes": "9画",
+    "stroke_gif": "templates/hanzi_gif/屏.gif",
+    "audio": "templates/fayindata/ping2.mp3",
+    "translations": {
+      "en": "Screen",
+      "ru": "Экран"
+    }
+  },
+  "七": {
+    "pinyin": "qī",
+    "pinyin_number": "qi1",
+    "level": "一级",
+    "radical": "一",
+    "strokes": "2画",
+    "stroke_gif": "templates/hanzi_gif/七.gif",
+    "audio": "templates/fayindata/qi1.mp3",
+    "translations": {
+      "en": "Seven",
+      "ru": "Семь"
+    }
+  },
+  "棲": {
+    "pinyin": "qī",
+    "pinyin_number": "qi1",
+    "level": "高等",
+    "radical": "木",
+    "strokes": "12画",
+    "stroke_gif": "templates/hanzi_gif/棲.gif",
+    "audio": "templates/fayindata/qi1.mp3",
+    "translations": {
+      "en": "Perch",
+      "ru": "Присаживаться"
+    }
+  },
+  "千": {
+    "pinyin": "qiān",
+    "pinyin_number": "qian1",
+    "level": "一级",
+    "radical": "十",
+    "strokes": "3画",
+    "stroke_gif": "templates/hanzi_gif/千.gif",
+    "audio": "templates/fayindata/qian1.mp3",
+    "translations": {
+      "en": "Thousand",
+      "ru": "Тысяча"
+    }
+  },
+  "桥": {
+    "pinyin": "qiáo",
+    "pinyin_number": "qiao2",
+    "level": "一级",
+    "radical": "木",
+    "strokes": "10画",
+    "stroke_gif": "templates/hanzi_gif/桥.gif",
+    "audio": "templates/fayindata/qiao2.mp3",
+    "translations": {
+      "en": "Bridge",
+      "ru": "Мост"
+    }
+  },
+  "木": {
+    "pinyin": "mù",
+    "pinyin_number": "mu4",
+    "level": "一级",
+    "radical": "木",
+    "strokes": "4画",
+    "stroke_gif": "templates/hanzi_gif/木.gif",
+    "audio": "templates/fayindata/mu4.mp3",
+    "translations": {
+      "en": "Wood",
+      "ru": "Дерево"
+    }
+  },
+  "南": {
+    "pinyin": "nán",
+    "pinyin_number": "nan2",
+    "level": "一级",
+    "radical": "十",
+    "strokes": "9画",
+    "stroke_gif": "templates/hanzi_gif/南.gif",
+    "audio": "templates/fayindata/nan2.mp3",
+    "translations": {
+      "en": "South",
+      "ru": "Юг"
+    }
+  },
+  "宁": {
+    "pinyin": "níng",
+    "pinyin_number": "ning2",
+    "level": "二级",
+    "radical": "宀",
+    "strokes": "5画",
+    "stroke_gif": "templates/hanzi_gif/宁.gif",
+    "audio": "templates/fayindata/ning2.mp3",
+    "translations": {
+      "en": "Peaceful",
+      "ru": "Спокойный"
+    }
+  },
+  "盘": {
+    "pinyin": "pán",
+    "pinyin_number": "pan2",
+    "level": "二级",
+    "radical": "皿",
+    "strokes": "11画",
+    "stroke_gif": "templates/hanzi_gif/盘.gif",
+    "audio": "templates/fayindata/pan2.mp3",
+    "translations": {
+      "en": "Plate",
+      "ru": "Тарелка"
+    }
+  },
+  "坪": {
+    "pinyin": "píng",
+    "pinyin_number": "ping2",
+    "level": "三级",
+    "radical": "土",
+    "strokes": "8画",
+    "stroke_gif": "templates/hanzi_gif/坪.gif",
+    "audio": "templates/fayindata/ping2.mp3",
+    "translations": {
+      "en": "Flat ground",
+      "ru": "Ровная поверхность"
+    }
+  },
+  "马": {
+    "pinyin": "mǎ",
+    "pinyin_number": "ma3",
+    "level": "一级",
+    "radical": "马",
+    "strokes": "3画",
+    "stroke_gif": "templates/hanzi_gif/马.gif",
+    "audio": "templates/fayindata/ma3.mp3",
+    "translations": {
+      "en": "Horse",
+      "ru": "Лошадь"
+    }
+  },
+  "门": {
+    "pinyin": "mén",
+    "pinyin_number": "men2",
+    "level": "一级",
+    "radical": "门",
+    "strokes": "3画",
+    "stroke_gif": "templates/hanzi_gif/门.gif",
+    "audio": "templates/fayindata/men2.mp3",
+    "translations": {
+      "en": "Door",
+      "ru": "Дверь"
+    }
+  },
+  "妙": {
+    "pinyin": "miào",
+    "pinyin_number": "miao4",
+    "level": "二级",
+    "radical": "女",
+    "strokes": "7画",
+    "stroke_gif": "templates/hanzi_gif/妙.gif",
+    "audio": "templates/fayindata/miao4.mp3",
+    "translations": {
+      "en": "Wonderful",
+      "ru": "Замечательный"
+    }
+  },
+  "摸": {
+    "pinyin": "mō",
+    "pinyin_number": "mo1",
+    "level": "二级",
+    "radical": "扌",
+    "strokes": "13画",
+    "stroke_gif": "templates/hanzi_gif/摸.gif",
+    "audio": "templates/fayindata/mo1.mp3",
+    "translations": {
+      "en": "Touch",
+      "ru": "Трогать"
+    }
+  },
+  "墨": {
+    "pinyin": "mò",
+    "pinyin_number": "mo4",
+    "level": "五级",
+    "radical": "黑",
+    "strokes": "15画",
+    "stroke_gif": "templates/hanzi_gif/墨.gif",
+    "audio": "templates/fayindata/mo4.mp3",
+    "translations": {
+      "en": "Ink, black",
+      "ru": "Тушь, черный"
+    },
+    "places": ["墨家", "墨脱县"],
+    "tips": "常用于表示墨水、墨色等含义"
+  },
+  "楼": {
+    "pinyin": "lóu",
+    "pinyin_number": "lou2",
+    "level": "一级",
+    "radical": "木",
+    "strokes": "13画",
+    "stroke_gif": "templates/hanzi_gif/楼.gif",
+    "audio": "templates/fayindata/lou2.mp3",
+    "translations": {
+      "en": "Building",
+      "ru": "Здание"
+    }
+  },
+  "鲁": {
+    "pinyin": "lǔ",
+    "pinyin_number": "lu3",
+    "level": "二级",
+    "radical": "鱼",
+    "strokes": "12画",
+    "stroke_gif": "templates/hanzi_gif/鲁.gif",
+    "audio": "templates/fayindata/lu3.mp3",
+    "translations": {
+      "en": "Shandong (province)",
+      "ru": "Шаньдун (провинция)"
+    }
+  },
+  "路": {
+    "pinyin": "lù",
+    "pinyin_number": "lu4",
+    "level": "一级",
+    "radical": "足",
+    "strokes": "13画",
+    "stroke_gif": "templates/hanzi_gif/路.gif",
+    "audio": "templates/fayindata/lu4.mp3",
+    "translations": {
+      "en": "Road",
+      "ru": "Дорога"
+    }
+  },
+  "露": {
+    "pinyin": "lù",
+    "pinyin_number": "lu4",
+    "level": "二级",
+    "radical": "雨",
+    "strokes": "21画",
+    "stroke_gif": "templates/hanzi_gif/露.gif",
+    "audio": "templates/fayindata/lu4.mp3",
+    "translations": {
+      "en": "Dew",
+      "ru": "Роса"
+    }
+  },
+  "骆": {
+    "pinyin": "luò",
+    "pinyin_number": "luo4",
+    "level": "高等",
+    "radical": "马",
+    "strokes": "9画",
+    "stroke_gif": "templates/hanzi_gif/骆.gif",
+    "audio": "templates/fayindata/luo4.mp3",
+    "translations": {
+      "en": "Camel",
+      "ru": "Верблюд"
+    }
+  },
+  "兰": {
+    "pinyin": "lán",
+    "pinyin_number": "lan2",
+    "level": "一级",
+    "radical": "艹",
+    "strokes": "5画",
+    "stroke_gif": "templates/hanzi_gif/兰.gif",
+    "audio": "templates/fayindata/lan2.mp3",
+    "translations": {
+      "en": "Orchid",
+      "ru": "Орхидея"
+    }
+  },
+  "老": {
+    "pinyin": "lǎo",
+    "pinyin_number": "lao3",
+    "level": "一级",
+    "radical": "耂",
+    "strokes": "6画",
+    "stroke_gif": "templates/hanzi_gif/老.gif",
+    "audio": "templates/fayindata/lao3.mp3",
+    "translations": {
+      "en": "Old",
+      "ru": "Старый"
+    }
+  },
+  "里": {
+    "pinyin": "lǐ",
+    "pinyin_number": "li3",
+    "level": "一级",
+    "radical": "里",
+    "strokes": "7画",
+    "stroke_gif": "templates/hanzi_gif/里.gif",
+    "audio": "templates/fayindata/li3.mp3",
+    "translations": {
+      "en": "Inside",
+      "ru": "Внутри"
+    }
+  },
+  "龙": {
+    "pinyin": "lóng",
+    "pinyin_number": "long2",
+    "level": "一级",
+    "radical": "龙",
+    "strokes": "5画",
+    "stroke_gif": "templates/hanzi_gif/龙.gif",
+    "audio": "templates/fayindata/long2.mp3",
+    "translations": {
+      "en": "Dragon",
+      "ru": "Дракон"
+    }
+  },
+  "隆": {
+    "pinyin": "lóng",
+    "pinyin_number": "long2",
+    "level": "二级",
+    "radical": "阝",
+    "strokes": "11画",
+    "stroke_gif": "templates/hanzi_gif/隆.gif",
+    "audio": "templates/fayindata/long2.mp3",
+    "translations": {
+      "en": "Prosperous",
+      "ru": "Процветающий"
+    }
+  },
+  "金": {
+    "pinyin": "jīn",
+    "pinyin_number": "jin1",
+    "level": "一级",
+    "radical": "金",
+    "strokes": "8画",
+    "stroke_gif": "templates/hanzi_gif/金.gif",
+    "audio": "templates/fayindata/jin1.mp3",
+    "translations": {
+      "en": "Gold",
+      "ru": "Золото"
+    }
+  },
+  "九": {
+    "pinyin": "jiǔ",
+    "pinyin_number": "jiu3",
+    "level": "一级",
+    "radical": "乙",
+    "strokes": "2画",
+    "stroke_gif": "templates/hanzi_gif/九.gif",
+    "audio": "templates/fayindata/jiu3.mp3",
+    "translations": {
+      "en": "Nine",
+      "ru": "Девять"
+    }
+  },
+  "酒": {
+    "pinyin": "jiǔ",
+    "pinyin_number": "jiu3",
+    "level": "二级",
+    "radical": "氵",
+    "strokes": "10画",
+    "stroke_gif": "templates/hanzi_gif/酒.gif",
+    "audio": "templates/fayindata/jiu3.mp3",
+    "translations": {
+      "en": "Alcohol",
+      "ru": "Алкоголь"
+    }
+  },
+  "掬": {
+    "pinyin": "jū",
+    "pinyin_number": "ju1",
+    "level": "高等",
+    "radical": "扌",
+    "strokes": "11画",
+    "stroke_gif": "templates/hanzi_gif/掬.gif",
+    "audio": "templates/fayindata/ju1.mp3",
+    "translations": {
+      "en": "Hold with both hands",
+      "ru": "Держать двумя руками"
+    }
+  },
+  "军": {
+    "pinyin": "jūn",
+    "pinyin_number": "jun1",
+    "level": "二级",
+    "radical": "冖",
+    "strokes": "6画",
+    "stroke_gif": "templates/hanzi_gif/军.gif",
+    "audio": "templates/fayindata/jun1.mp3",
+    "translations": {
+      "en": "Army",
+      "ru": "Армия"
+    }
+  },
+  "机": {
+    "pinyin": "jī",
+    "pinyin_number": "ji1",
+    "level": "一级",
+    "radical": "木",
+    "strokes": "6画",
+    "stroke_gif": "templates/hanzi_gif/机.gif",
+    "audio": "templates/fayindata/ji1.mp3",
+    "translations": {
+      "en": "Machine",
+      "ru": "Машина"
+    }
+  },
+  "家": {
+    "pinyin": "jiā",
+    "pinyin_number": "jia1",
+    "level": "一级",
+    "radical": "宀",
+    "strokes": "10画",
+    "stroke_gif": "templates/hanzi_gif/家.gif",
+    "audio": "templates/fayindata/jia1.mp3",
+    "translations": {
+      "en": "Home",
+      "ru": "Дом"
+    }
+  },
+  "简": {
+    "pinyin": "jiǎn",
+    "pinyin_number": "jian3",
+    "level": "二级",
+    "radical": "竹",
+    "strokes": "13画",
+    "stroke_gif": "templates/hanzi_gif/简.gif",
+    "audio": "templates/fayindata/jian3.mp3",
+    "translations": {
+      "en": "Simple",
+      "ru": "Простой"
+    }
+  },
+  "健": {
+    "pinyin": "jiàn",
+    "pinyin_number": "jian4",
+    "level": "二级",
+    "radical": "亻",
+    "strokes": "10画",
+    "stroke_gif": "templates/hanzi_gif/健.gif",
+    "audio": "templates/fayindata/jian4.mp3",
+    "translations": {
+      "en": "Healthy",
+      "ru": "Здоровый"
+    }
+  },
+  "街": {
+    "pinyin": "jiē",
+    "pinyin_number": "jie1",
+    "level": "一级",
+    "radical": "行",
+    "strokes": "12画",
+    "stroke_gif": "templates/hanzi_gif/街.gif",
+    "audio": "templates/fayindata/jie1.mp3",
+    "translations": {
+      "en": "Street",
+      "ru": "Улица"
+    }
+  },
+  "化": {
+    "pinyin": "huà",
+    "pinyin_number": "hua4",
+    "level": "一级",
+    "radical": "亻",
+    "strokes": "4画",
+    "stroke_gif": "templates/hanzi_gif/化.gif",
+    "audio": "templates/fayindata/hua4.mp3",
+    "translations": {
+      "en": "Change",
+      "ru": "Изменение"
+    }
+  },
+  "黄": {
+    "pinyin": "huáng",
+    "pinyin_number": "huang2",
+    "level": "一级",
+    "radical": "黄",
+    "strokes": "11画",
+    "stroke_gif": "templates/hanzi_gif/黄.gif",
+    "audio": "templates/fayindata/huang2.mp3",
+    "translations": {
+      "en": "Yellow",
+      "ru": "Жёлтый"
+    }
+  },
+  "湟": {
+    "pinyin": "huáng",
+    "pinyin_number": "huang2",
+    "level": "高等",
+    "radical": "氵",
+    "strokes": "12画",
+    "stroke_gif": "templates/hanzi_gif/湟.gif",
+    "audio": "templates/fayindata/huang2.mp3",
+    "translations": {
+      "en": "Name of river",
+      "ru": "Название реки"
+    }
+  },
+  "煌": {
+    "pinyin": "huáng",
+    "pinyin_number": "huang2",
+    "level": "高等",
+    "radical": "火",
+    "strokes": "13画",
+    "stroke_gif": "templates/hanzi_gif/煌.gif",
+    "audio": "templates/fayindata/huang2.mp3",
+    "translations": {
+      "en": "Bright",
+      "ru": "Яркий"
+    }
+  },
+  "惠": {
+    "pinyin": "huì",
+    "pinyin_number": "hui4",
+    "level": "二级",
+    "radical": "心",
+    "strokes": "12画",
+    "stroke_gif": "templates/hanzi_gif/惠.gif",
+    "audio": "templates/fayindata/hui4.mp3",
+    "translations": {
+      "en": "Kindness",
+      "ru": "Доброта"
+    }
+  },
+  "广": {
+    "pinyin": "guǎng",
+    "pinyin_number": "guang3",
+    "level": "一级",
+    "radical": "广",
+    "strokes": "3画",
+    "stroke_gif": "templates/hanzi_gif/广.gif",
+    "audio": "templates/fayindata/guang3.mp3",
+    "translations": {
+      "en": "Wide",
+      "ru": "Широкий"
+    }
+  },
+  "海": {
+    "pinyin": "hǎi",
+    "pinyin_number": "hai3",
+    "level": "一级",
+    "radical": "氵",
+    "strokes": "10画",
+    "stroke_gif": "templates/hanzi_gif/海.gif",
+    "audio": "templates/fayindata/hai3.mp3",
+    "translations": {
+      "en": "Sea",
+      "ru": "Море"
+    }
+  },
+  "河": {
+    "pinyin": "hé",
+    "pinyin_number": "he2",
+    "level": "一级",
+    "radical": "氵",
+    "strokes": "8画",
+    "stroke_gif": "templates/hanzi_gif/河.gif",
+    "audio": "templates/fayindata/he2.mp3",
+    "translations": {
+      "en": "River",
+      "ru": "Река"
+    }
+  },
+  "红": {
+    "pinyin": "hóng",
+    "pinyin_number": "hong2",
+    "level": "一级",
+    "radical": "纟",
+    "strokes": "6画",
+    "stroke_gif": "templates/hanzi_gif/红.gif",
+    "audio": "templates/fayindata/hong2.mp3",
+    "translations": {
+      "en": "Red",
+      "ru": "Красный"
+    }
+  },
+  "湖": {
+    "pinyin": "hú",
+    "pinyin_number": "hu2",
+    "level": "一级",
+    "radical": "氵",
+    "strokes": "12画",
+    "stroke_gif": "templates/hanzi_gif/湖.gif",
+    "audio": "templates/fayindata/hu2.mp3",
+    "translations": {
+      "en": "Lake",
+      "ru": "Озеро"
+    }
+  },
+  "古": {
+    "pinyin": "gǔ",
+    "pinyin_number": "gu3",
+    "level": "一级",
+    "radical": "口",
+    "strokes": "5画",
+    "stroke_gif": "templates/hanzi_gif/古.gif",
+    "audio": "templates/fayindata/gu3.mp3",
+    "translations": {
+      "en": "Ancient",
+      "ru": "Древний"
+    }
+  },
+  "固": {
+    "pinyin": "gù",
+    "pinyin_number": "gu4",
+    "level": "二级",
+    "radical": "囗",
+    "strokes": "8画",
+    "stroke_gif": "templates/hanzi_gif/固.gif",
+    "audio": "templates/fayindata/gu4.mp3",
+    "translations": {
+      "en": "Solid",
+      "ru": "Твердый"
+    }
+  },
+  "观": {
+    "pinyin": "guān",
+    "pinyin_number": "guan1",
+    "level": "二级",
+    "radical": "见",
+    "strokes": "6画",
+    "stroke_gif": "templates/hanzi_gif/观.gif",
+    "audio": "templates/fayindata/guan1.mp3",
+    "translations": {
+      "en": "View",
+      "ru": "Вид"
+    }
+  },
+  "官": {
+    "pinyin": "guān",
+    "pinyin_number": "guan1",
+    "level": "二级",
+    "radical": "宀",
+    "strokes": "8画",
+    "stroke_gif": "templates/hanzi_gif/官.gif",
+    "audio": "templates/fayindata/guan1.mp3",
+    "translations": {
+      "en": "Official",
+      "ru": "Чиновник"
+    }
+  },
+  "馆": {
+    "pinyin": "guǎn",
+    "pinyin_number": "guan3",
+    "level": "二级",
+    "radical": "饣",
+    "strokes": "11画",
+    "stroke_gif": "templates/hanzi_gif/馆.gif",
+    "audio": "templates/fayindata/guan3.mp3",
+    "translations": {
+      "en": "Restaurant",
+      "ru": "Ресторан"
+    }
+  },
+  "皋": {
+    "pinyin": "gāo",
+    "pinyin_number": "gao1",
+    "level": "高等",
+    "radical": "白",
+    "strokes": "10画",
+    "stroke_gif": "templates/hanzi_gif/皋.gif",
+    "audio": "templates/fayindata/gao1.mp3",
+    "translations": {
+      "en": "Riverbank",
+      "ru": "Берег реки"
+    }
+  },
+  "阁": {
+    "pinyin": "gé",
+    "pinyin_number": "ge2",
+    "level": "三级",
+    "radical": "门",
+    "strokes": "9画",
+    "stroke_gif": "templates/hanzi_gif/阁.gif",
+    "audio": "templates/fayindata/ge2.mp3",
+    "translations": {
+      "en": "Pavilion",
+      "ru": "Павильон"
+    }
+  },
+  "公": {
+    "pinyin": "gōng",
+    "pinyin_number": "gong1",
+    "level": "一级",
+    "radical": "八",
+    "strokes": "4画",
+    "stroke_gif": "templates/hanzi_gif/公.gif",
+    "audio": "templates/fayindata/gong1.mp3",
+    "translations": {
+      "en": "Public",
+      "ru": "Общественный"
+    }
+  },
+  "宫": {
+    "pinyin": "gōng",
+    "pinyin_number": "gong1",
+    "level": "二级",
+    "radical": "宀",
+    "strokes": "9画",
+    "stroke_gif": "templates/hanzi_gif/宫.gif",
+    "audio": "templates/fayindata/gong1.mp3",
+    "translations": {
+      "en": "Palace",
+      "ru": "Дворец"
+    }
+  },
+  "沟": {
+    "pinyin": "gōu",
+    "pinyin_number": "gou1",
+    "level": "三级",
+    "radical": "氵",
+    "strokes": "7画",
+    "stroke_gif": "templates/hanzi_gif/沟.gif",
+    "audio": "templates/fayindata/gou1.mp3",
+    "translations": {
+      "en": "Ditch",
+      "ru": "Канава"
+    }
+  },
+  "佛": {
+    "pinyin": "fó",
+    "pinyin_number": "fo2",
+    "level": "高等",
+    "radical": "亻",
+    "strokes": "7画",
+    "stroke_gif": "templates/hanzi_gif/佛.gif",
+    "audio": "templates/fayindata/fo2.mp3",
+    "translations": {
+      "en": "Buddha",
+      "ru": "Будда"
+    }
+  },
+  "尕": {
+    "pinyin": "gǎ",
+    "pinyin_number": "ga3",
+    "level": "高等",
+    "radical": "小",
+    "strokes": "5画",
+    "stroke_gif": "templates/hanzi_gif/尕.gif",
+    "audio": "templates/fayindata/ga3.mp3",
+    "translations": {
+      "en": "Small (dialect)",
+      "ru": "Маленький (диалект)"
+    }
+  },
+  "甘": {
+    "pinyin": "gān",
+    "pinyin_number": "gan1",
+    "level": "二级",
+    "radical": "甘",
+    "strokes": "5画",
+    "stroke_gif": "templates/hanzi_gif/甘.gif",
+    "audio": "templates/fayindata/gan1.mp3",
+    "translations": {
+      "en": "Sweet",
+      "ru": "Сладкий"
+    }
+  },
+  "感": {
+    "pinyin": "gǎn",
+    "pinyin_number": "gan3",
+    "level": "二级",
+    "radical": "心",
+    "strokes": "13画",
+    "stroke_gif": "templates/hanzi_gif/感.gif",
+    "audio": "templates/fayindata/gan3.mp3",
+    "translations": {
+      "en": "Feel",
+      "ru": "Чувствовать"
+    }
+  },
+  "岗": {
+    "pinyin": "gǎng",
+    "pinyin_number": "gang3",
+    "level": "三级",
+    "radical": "山",
+    "strokes": "7画",
+    "stroke_gif": "templates/hanzi_gif/岗.gif",
+    "audio": "templates/fayindata/gang3.mp3",
+    "translations": {
+      "en": "Post",
+      "ru": "Пост"
+    }
+  },
+  "二": {
+    "pinyin": "èr",
+    "pinyin_number": "er4",
+    "level": "一级",
+    "radical": "二",
+    "strokes": "2画",
+    "stroke_gif": "/templates/hanzi_gif/二.gif",
+    "audio": "/templates/fayindata/er4.mp3",
+    "translations": {
+      "en": "Two",
+      "ru": "Два"
+    }
+  },
+  "范": {
+    "pinyin": "fàn",
+    "pinyin_number": "fan4",
+    "level": "二级",
+    "radical": "艹",
+    "strokes": "8画",
+    "stroke_gif": "/templates/hanzi_gif/范.gif",
+    "audio": "/templates/fayindata/fan4.mp3",
+    "translations": {
+      "en": "Model",
+      "ru": "Образец"
+    }
+  },
+  "方": {
+    "pinyin": "fāng",
+    "pinyin_number": "fang1",
+    "level": "一级",
+    "radical": "方",
+    "strokes": "4画",
+    "stroke_gif": "/templates/hanzi_gif/方.gif",
+    "audio": "/templates/fayindata/fang1.mp3",
+    "translations": {
+      "en": "Square",
+      "ru": "Квадрат"
+    }
+  },
+  "凤": {
+    "pinyin": "fèng",
+    "pinyin_number": "feng4",
+    "level": "二级",
+    "radical": "几",
+    "strokes": "4画",
+    "stroke_gif": "/templates/hanzi_gif/凤.gif",
+    "audio": "/templates/fayindata/feng4.mp3",
+    "translations": {
+      "en": "Phoenix",
+      "ru": "Феникс"
+    }
+  },
+  "伏": {
+    "pinyin": "fú",
+    "pinyin_number": "fu2",
+    "level": "二级",
+    "radical": "亻",
+    "strokes": "6画",
+    "stroke_gif": "/templates/hanzi_gif/伏.gif",
+    "audio": "/templates/fayindata/fu2.mp3",
+    "translations": {
+      "en": "Prostrate",
+      "ru": "Преклониться"
+    }
+  },
+  "动": {
+    "pinyin": "dòng",
+    "pinyin_number": "dong4",
+    "level": "一级",
+    "radical": "力",
+    "strokes": "6画",
+    "stroke_gif": "/templates/hanzi_gif/动.gif",
+    "audio": "/templates/fayindata/dong4.mp3",
+    "translations": {
+      "en": "Move",
+      "ru": "Движение"
+    }
+  },
+  "读": {
+    "pinyin": "dú",
+    "pinyin_number": "du2",
+    "level": "一级",
+    "radical": "讠",
+    "strokes": "10画",
+    "stroke_gif": "templates/hanzi_gif/读.gif",
+    "audio": "templates/fayindata/du2.mp3",
+    "translations": {
+      "en": "Read",
+      "ru": "Чтение"
+    }
+  },
+  "牍": {
+    "pinyin": "dú",
+    "pinyin_number": "du2",
+    "level": "高等",
+    "radical": "片",
+    "strokes": "12画",
+    "stroke_gif": "/templates/hanzi_gif/牍.gif",
+    "audio": "/templates/fayindata/du2.mp3",
+    "translations": {
+      "en": "Writing tablet",
+      "ru": "Письменная доска"
+    }
+  },
+  "敦": {
+    "pinyin": "dūn",
+    "pinyin_number": "dun1",
+    "level": "高等",
+    "radical": "攵",
+    "strokes": "12画",
+    "stroke_gif": "/templates/hanzi_gif/敦.gif",
+    "audio": "/templates/fayindata/dun1.mp3",
+    "translations": {
+      "en": "Honest",
+      "ru": "Честный"
+    }
+  },
+  "恩": {
+    "pinyin": "ēn",
+    "pinyin_number": "en1",
+    "level": "二级",
+    "radical": "心",
+    "strokes": "10画",
+    "stroke_gif": "/templates/hanzi_gif/恩.gif",
+    "audio": "/templates/fayindata/en1.mp3",
+    "translations": {
+      "en": "Kindness",
+      "ru": "Доброта"
+    }
+  },
+  "车": {
+    "pinyin": "chē",
+    "pinyin_number": "che1",
+    "level": "一级",
+    "radical": "车",
+    "strokes": "4画",
+    "stroke_gif": "templates/hanzi_gif/车.gif",
+    "audio": "templates/fayindata/che1.mp3",
+    "translations": {
+      "en": "Vehicle",
+      "ru": "Транспорт"
+    }
+  },
+  "大": {
+    "pinyin": "dà",
+    "pinyin_number": "da4",
+    "level": "一级",
+    "radical": "大",
+    "strokes": "3画",
+    "stroke_gif": "templates/hanzi_gif/大.gif",
+    "audio": "templates/fayindata/da4.mp3",
+    "translations": {
+      "en": "Big",
+      "ru": "Большой"
+    }
+  },
+  "东": {
+    "pinyin": "dōng",
+    "pinyin_number": "dong1",
+    "level": "一级",
+    "radical": "一",
+    "strokes": "5画",
+    "stroke_gif": "templates/hanzi_gif/东.gif",
+    "audio": "templates/fayindata/dong1.mp3",
+    "translations": {
+      "en": "East",
+      "ru": "Восток"
+    }
+  },
+  "柏": {
+    "pinyin": "bǎi",
+    "pinyin_number": "bai3",
+    "level": "二级",
+    "radical": "木",
+    "strokes": "9画",
+    "stroke_gif": "/templates/hanzi_gif/柏.gif",
+    "audio": "/templates/fayindata/bai3.mp3",
+    "translations": {
+      "en": "Cypress",
+      "ru": "Кипарис"
+    }
+  },
+  "抱": {
+    "pinyin": "bào",
+    "pinyin_number": "bao4",
+    "level": "二级",
+    "radical": "扌",
+    "strokes": "8画",
+    "stroke_gif": "/templates/hanzi_gif/抱.gif",
+    "audio": "/templates/fayindata/bao4.mp3",
+    "translations": {
+      "en": "Embrace",
+      "ru": "Обнимать"
+    }
+  },
+  "北": {
+    "pinyin": "běi",
+    "pinyin_number": "bei3",
+    "level": "一级",
+    "radical": "匕",
+    "strokes": "5画",
+    "stroke_gif": "/templates/hanzi_gif/北.gif",
+    "audio": "/templates/fayindata/bei3.mp3",
+    "translations": {
+      "en": "North",
+      "ru": "Север"
+    }
+  },
+  "滨": {
+    "pinyin": "bīn",
+    "pinyin_number": "bin1",
+    "level": "二级",
+    "radical": "氵",
+    "strokes": "13画",
+    "stroke_gif": "/templates/hanzi_gif/滨.gif",
+    "audio": "/templates/fayindata/bin1.mp3",
+    "translations": {
+      "en": "Shore",
+      "ru": "Берег"
+    }
+  },
+  "博": {
+    "pinyin": "bó",
+    "pinyin_number": "bo2",
+    "level": "二级",
+    "radical": "十",
+    "strokes": "12画",
+    "stroke_gif": "/templates/hanzi_gif/博.gif",
+    "audio": "/templates/fayindata/bo2.mp3",
+    "translations": {
+      "en": "Extensive",
+      "ru": "Обширный"
+    }
+  },
+  "阿": {
+    "pinyin": "ā",
+    "pinyin_number": "a1",
+    "level": "高等",
+    "radical": "阝",
+    "strokes": "7画",
+    "stroke_gif": "templates/hanzi_gif/阿.gif",
+    "audio": "templates/fayindata/a1.mp3",
+    "translations": {
+      "en": "Prefix for names",
+      "ru": "Приставка к именам"
+    }
+  },
+  "安": {
+    "pinyin": "ān",
+    "pinyin_number": "an1",
+    "level": "一级",
+    "radical": "宀",
+    "strokes": "6画",
+    "stroke_gif": "templates/hanzi_gif/安.gif",
+    "audio": "templates/fayindata/an1.mp3",
+    "translations": {
+      "en": "Peace",
+      "ru": "Покой"
+    }
+  },
+  "八": {
+    "pinyin": "bā",
+    "pinyin_number": "ba1",
+    "level": "一级",
+    "radical": "八",
+    "strokes": "2画",
+    "stroke_gif": "templates/hanzi_gif/八.gif",
+    "audio": "templates/fayindata/ba1.mp3",
+    "translations": {
+      "en": "Eight",
+      "ru": "Восемь"
+    }
+  },
+  "巷": {
+    "pinyin": "xiàng",
+    "pinyin_number": "xiang4",
+    "level": "高等",
+    "radical": "巳",
+    "strokes": "9画",
+    "stroke_gif": "templates/hanzi_gif/巷.gif",
+    "audio": "templates/fayindata/xiang4.mp3",
+    "translations": {
+      "en": "Lane",
+      "ru": "Переулок"
+    },
+    "note": "需要添加发音文件xiang4.mp3"
+  },
+  "山": {
+    "en": "Mountain",
+    "ru": "Гора"
+  },
+  "水": {
+    "en": "Water",
+    "ru": "Вода"
+  },
+  "墨": {
+    "en": "Ink",
+    "ru": "Чернила"
+  },
+  "丹": {
+    "pinyin": "dān",
+    "pinyin_number": "dan1",
+    "level": "二级",
+    "radical": "丶",
+    "strokes": "4画",
+    "stroke_gif": "/templates/hanzi_gif/丹.gif",
+    "audio": "/templates/fayindata/dan1.mp3",
+    "translations": {
+      "en": "Red",
+      "ru": "Красный"
+    }
+  },
+  "霞": {
+    "pinyin": "xiá",
+    "pinyin_number": "xia2",
+    "level": "二级",
+    "radical": "雨",
+    "strokes": "17画",
+    "stroke_gif": "/templates/hanzi_gif/霞.gif",
+    "audio": "/templates/fayindata/xia2.mp3",
+    "translations": {
+      "en": "Rosy clouds",
+      "ru": "Розовые облака"
+    }
+  },
+  "五": {
+    "pinyin": "wǔ",
+    "pinyin_number": "wu3",
+    "level": "一级",
+    "radical": "二",
+    "strokes": "4画",
+    "stroke_gif": "/templates/hanzi_gif/五.gif",
+    "audio": "/templates/fayindata/wu3.mp3",
+    "translations": {
+      "en": "Five",
+      "ru": "Пять"
+    }
+  },
+  "泉": {
+    "pinyin": "quán",
+    "pinyin_number": "quan2",
+    "level": "二级",
+    "radical": "水",
+    "strokes": "9画",
+    "stroke_gif": "/templates/hanzi_gif/泉.gif",
+    "audio": "/templates/fayindata/quan2.mp3",
+    "translations": {
+      "en": "Spring",
+      "ru": "Родник"
+    }
+  },
+  "兰": {
+    "pinyin": "lán",
+    "pinyin_number": "lan2",
+    "level": "一级",
+    "radical": "艹",
+    "strokes": "5画",
+    "stroke_gif": "/templates/hanzi_gif/兰.gif",
+    "audio": "/templates/fayindata/lan2.mp3",
+    "translations": {
+      "en": "Orchid",
+      "ru": "Орхидея"
+    }
+  },
+  "老": {
+    "pinyin": "lǎo",
+    "pinyin_number": "lao3",
+    "level": "一级",
+    "radical": "耂",
+    "strokes": "6画",
+    "stroke_gif": "/templates/hanzi_gif/老.gif",
+    "audio": "/templates/fayindata/lao3.mp3",
+    "translations": {
+      "en": "Old",
+      "ru": "Старый"
+    }
+  },
+  "街": {
+    "pinyin": "jiē",
+    "pinyin_number": "jie1",
+    "level": "一级",
+    "radical": "行",
+    "strokes": "12画",
+    "stroke_gif": "/templates/hanzi_gif/街.gif",
+    "audio": "/templates/fayindata/jie1.mp3",
+    "translations": {
+      "en": "Street",
+      "ru": "Улица"
+    }
+  },
+  "黄": {
+    "pinyin": "huáng",
+    "pinyin_number": "huang2",
+    "level": "二级",
+    "radical": "黄",
+    "strokes": "11画",
+    "stroke_gif": "templates/hanzi_gif/黄.gif",
+    "audio": "templates/fayindata/huang2.mp3",
+    "translations": {
+      "en": "Yellow",
+      "ru": "Жёлтый"
+    }
+  },
+  "河": {
+    "pinyin": "hé",
+    "pinyin_number": "he2",
+    "level": "二级",
+    "radical": "水/氵/氺",
+    "strokes": "8画",
+    "stroke_gif": "templates/hanzi_gif/河.gif",
+    "audio": "templates/fayindata/he2.mp3",
+    "translations": {
+      "en": "River",
+      "ru": "Река"
+    }
+  },
+  "桥": {
+    "pinyin": "qiáo",
+    "pinyin_number": "qiao2",
+    "level": "三级",
+    "radical": "木",
+    "strokes": "10画",
+    "stroke_gif": "templates/hanzi_gif/桥.gif",
+    "audio": "templates/fayindata/qiao2.mp3",
+    "translations": {
+      "en": "Bridge",
+      "ru": "Мост"
+    }
+  },
+  "楼": {
+    "pinyin": "lóu",
+    "pinyin_number": "lou2",
+    "level": "一级",
+    "radical": "木",
+    "strokes": "13画",
+    "stroke_gif": "templates/hanzi_gif/楼.gif",
+    "audio": "templates/fayindata/lou2.mp3",
+    "translations": {
+      "en": "Building",
+      "ru": "Здание"
+    }
+  },
+  "中": {
+    "pinyin": "zhōng",
+    "pinyin_number": "zhong1",
+    "level": "四级",
+    "radical": "丨",
+    "strokes": "4画",
+    "stroke_gif": "templates/hanzi_gif/中.gif",
+    "audio": "templates/fayindata/zhong1.mp3",
+    "translations": {
+      "en": "Middle",
+      "ru": "Середина"
+    }
+  },
+  "州": {
+    "pinyin": "zhōu",
+    "pinyin_number": "zhou1",
+    "level": "一级",
+    "radical": "川",
+    "strokes": "6画",
+    "stroke_gif": "templates/hanzi_gif/州.gif",
+    "audio": "templates/fayindata/zhou1.mp3",
+    "translations": {
+      "en": "Prefecture",
+      "ru": "Область"
+    }
+  },
+  "城": {
+    "pinyin": "chéng",
+    "pinyin_number": "cheng2",
+    "level": "二级",
+    "radical": "土",
+    "strokes": "9画",
+    "stroke_gif": "templates/hanzi_gif/城.gif",
+    "audio": "templates/fayindata/cheng2.mp3",
+    "translations": {
+      "en": "City",
+      "ru": "Город"
+    }
+  },
+  "关": {
+    "pinyin": "guān",
+    "pinyin_number": "guan1",
+    "level": "三级",
+    "radical": "门",
+    "strokes": "6画",
+    "stroke_gif": "templates/hanzi_gif/关.gif",
+    "audio": "templates/fayindata/guan1.mp3",
+    "translations": {
+      "en": "Pass",
+      "ru": "Перевал"
+    }
+  },
+  "区": {
+    "pinyin": "qū",
+    "pinyin_number": "qu1",
+    "level": "四级",
+    "radical": "匸",
+    "strokes": "4画",
+    "stroke_gif": "templates/hanzi_gif/区.gif",
+    "audio": "templates/fayindata/qu1.mp3",
+    "translations": {
+      "en": "District",
+      "ru": "Район"
+    }
+  },
+  "白": {
+    "pinyin": "bái",
+    "pinyin_number": "bai2",
+    "level": "一级",
+    "radical": "白",
+    "strokes": "5画",
+    "stroke_gif": "templates/hanzi_gif/白.gif",
+    "audio": "templates/fayindata/bai2.mp3",
+    "translations": {
+      "en": "White",
+      "ru": "Белый"
+    }
+  },
+  "塔": {
+    "pinyin": "tǎ",
+    "pinyin_number": "ta3",
+    "level": "高等",
+    "radical": "土",
+    "strokes": "12画",
+    "stroke_gif": "templates/hanzi_gif/塔.gif",
+    "audio": "templates/fayindata/ta3.mp3",
+    "translations": {
+      "en": "Pagoda",
+      "ru": "Пагода"
+    }
+  }
+}

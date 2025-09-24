@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>汉字详情 - 兰州地名学习</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .character-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .character-display {
+      font-size: 72px;
+      margin: 20px 0;
+    }
+    .character-info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .error-message {
+      color: red;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="character-header">
+    <div class="character-display" id="character-display">墨</div>
+    <div id="character-pinyin">mò</div>
+  </div>
+
+  <div class="character-info">
+    <div><strong>拼音:</strong> <span id="info-pinyin">-</span></div>
+    <div><strong>HSK级别:</strong> <span id="info-hsk">-</span></div>
+    <div><strong>笔画数:</strong> <span id="info-strokes">-</span></div>
+    <div><strong>部首:</strong> <span id="info-radical">-</span></div>
+    <div><strong>英文:</strong> <span id="info-en">-</span></div>
+    <div><strong>俄语:</strong> <span id="info-ru">-</span></div>
+  </div>
+
+  <div id="loading-status" style="text-align:center;padding:10px;"></div>
+  <div id="error-container" class="error-message" style="display: none;"></div>
+
+  <script>
+    // 终极扩展拦截方案
+    const blockExtensions = () => {
+      const extensionScripts = [
+        'clipper-data',
+        'chrome-extension',
+        'moz-extension'
+      ];
+      
+      // 检查所有已知干扰特征
+      const hasExtension = extensionScripts.some(ext => 
+        document.querySelector(`script[src*="${ext}"]`) || 
+        navigator.userAgent.includes(ext)
+      );
+      
+      if (hasExtension || window.chrome?.runtime?.id) {
+        document.documentElement.innerHTML = `
+          <head><title>扩展拦截</title></head>
+          <body style="
+            padding: 40px;
+            text-align: center;
+            font-family: Arial;
+            background: #f8f9fa;
+          ">
+            <h2>必须完全禁用浏览器扩展</h2>
+            <p>请按以下步骤操作：</p>
+            <ol style="text-align:left;max-width:500px;margin:20px auto;">
+              <li>完全关闭所有浏览器窗口</li>
+              <li>使用Chrome无痕模式(Command+Shift+N)</li>
+              <li>或使用Firefox/Safari等无扩展浏览器</li>
+            </ol>
+            <button onclick="location.href=location.href" 
+                    style="
+                      padding: 12px 24px;
+                      background: #4285f4;
+                      color: white;
+                      border: none;
+                      border-radius: 4px;
+                      font-size: 16px;
+                    ">
+              我已完全禁用扩展，重新加载
+            </button>
+          </body>
+        `;
+        throw new Error('EXTENSION_BLOCKED');
+      }
+    };
+    
+    // 立即执行拦截检查
+    blockExtensions();
+    
+    if (isExtensionActive()) {
+      document.documentElement.innerHTML = `
+        <head><title>扩展干扰警告</title></head>
+        <body style="padding:40px;text-align:center;font-family:Arial;">
+          <h2>请完全禁用浏览器扩展</h2>
+          <p>检测到"clipper-data"等扩展正在干扰页面功能</p>
+          <p>请使用Chrome无痕模式(完全无扩展环境)访问</p>
+          <button onclick="location.href=location.href" 
+                  style="padding:12px 24px;background:#4285f4;color:white;border:none;border-radius:4px;">
+            我已禁用所有扩展，重新加载
+          </button>
+        </body>
+      `;
+      throw new Error('扩展干扰');
+    }
+
+    async function loadCharacter() {
+      try {
+        // 强制页面重绘
+        document.body.style.display = 'none';
+        
+        const char = decodeURIComponent(new URLSearchParams(window.location.search).get('char')) || '墨';
+        console.log('正在加载字符:', char);
+        
+        // 强制禁用缓存
+        const response = await fetch(`/static/character_data_new.json?t=${Date.now()}`, {
+          headers: {
+            'Cache-Control': 'no-cache',
+            'Pragma': 'no-cache'
+          }
+        });
+        console.log('响应内容:', await response.clone().text()); // 打印原始响应
+        console.log('响应状态:', response.status, response.statusText);
+        
+        if (!response.ok) {
+          throw new Error(`HTTP错误: ${response.status} ${await response.text()}`);
+        }
+        if (!response.ok) throw new Error(`HTTP错误: ${response.status}`);
+        
+        const textData = await response.text();
+        console.log('原始JSON数据:', textData);
+        
+        // 严格JSON解析
+        let data;
+        try {
+          data = JSON.parse(textData);
+          if (typeof data !== 'object' || data === null) {
+            throw new Error('无效的JSON格式');
+          }
+        } catch (e) {
+          console.error('JSON解析错误:', e);
+          throw new Error(`数据解析失败: ${e.message}`);
+        }
+        
+        // 确保数据渲染
+        const renderData = () => {
+          document.getElementById('character-display').textContent = char;
+          document.getElementById('character-pinyin').textContent = data[char].pinyin || '-';
+          document.getElementById('info-pinyin').textContent = data[char].pinyin || '-';
+          document.getElementById('info-hsk').textContent = data[char].level || '-';
+          document.getElementById('info-strokes').textContent = data[char].strokes || '-';
+          document.getElementById('info-radical').textContent = data[char].radical || '-';
+          document.getElementById('info-en').textContent = data[char].translations?.en || '无翻译';
+          document.getElementById('info-ru').textContent = data[char].translations?.ru || '无翻译';
+          document.getElementById('loading-status').textContent = '数据加载完成';
+        };
+        
+        // 延迟渲染确保DOM更新
+        setTimeout(renderData, 100);
+        console.log('加载的JSON数据:', data);
+        
+        if (!data[char]) {
+          console.error('字符数据:', data);
+          throw new Error(`未找到"${char}"的数据`);
+        }
+
+        console.log('找到字符数据:', data[char]);
+        
+        // 彻底重绘DOM
+        const newBody = document.body.cloneNode(false);
+        newBody.innerHTML = document.body.innerHTML;
+        document.body.parentNode.replaceChild(newBody, document.body);
+        
+        // 添加加载完成标记
+        document.documentElement.setAttribute('data-loaded', 'true');
+        
+        // 更新显示
+        console.log('更新页面显示...');
+        document.getElementById('character-display').textContent = char;
+        document.getElementById('character-pinyin').textContent = data[char].pinyin || '-';
+        document.getElementById('info-pinyin').textContent = data[char].pinyin || '-';
+        document.getElementById('info-hsk').textContent = data[char].level || '-';
+        document.getElementById('info-strokes').textContent = data[char].strokes || '-';
+        document.getElementById('info-radical').textContent = data[char].radical || '-';
+        document.getElementById('info-en').textContent = data[char].translations?.en || '无翻译';
+        document.getElementById('info-ru').textContent = data[char].translations?.ru || '无翻译';
+        
+        console.log('显示更新完成');
+        
+      } catch (error) {
+        const errorContainer = document.getElementById('error-container');
+        errorContainer.textContent = `加载失败: ${error.message}`;
+        errorContainer.style.display = 'block';
+        console.error('加载错误:', error);
+      }
+    }
+
+    // 页面加载完成后执行
+    document.addEventListener('DOMContentLoaded', loadCharacter);
+  </script>
+</body>
+</html>

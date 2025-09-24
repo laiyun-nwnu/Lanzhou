@@ -305,10 +305,12 @@
       // 读取汉字信息
       let data;
       try {
-        const res = await fetch('static/character_detail.json');
+        // 使用新的JSON文件路径
+        const res = await fetch('static/character_data_new.json');
         data = await res.json();
       } catch (e) {
         document.getElementById('character-display').innerText = '数据加载失败';
+        console.error('加载失败:', e);
         return;
       }
 
@@ -357,7 +359,9 @@
       // 读取所有地名并筛选包含该汉字的
       let places = [];
       try {
-        const res = await fetch('static/place_data.json');
+        // 添加时间戳参数防止缓存
+        const timestamp = new Date().getTime();
+        const res = await fetch(`static/place_data.json?t=${timestamp}`);
         const placeData = await res.json();
         places = Object.keys(placeData).filter(place => place.includes(char));
       } catch (e) {
@@ -365,7 +369,9 @@
       }
 
       if (places.length > 0) {
-        const placeRes = await fetch('static/place_data.json');
+        // 添加时间戳参数防止缓存
+        const timestamp = new Date().getTime();
+        const placeRes = await fetch(`static/place_data.json?t=${timestamp}`);
         const placeData = await placeRes.json();
         document.getElementById('related-places-container').innerHTML = places.map(place => `
               <div class="col-md-3 mb-3">

@@ -1,0 +1,35 @@
+async function renderCharacters(name) {
+  console.log('强制渲染地名:', name);
+  const container = document.getElementById('characters-list');
+  container.innerHTML = '';
+  
+  // 最基础字符拆分
+  const chars = name.split('');
+  console.log('基础拆分结果:', chars);
+
+  // 渲染每个字符
+  chars.forEach(char => {
+    if (!char.trim()) return;
+    
+    console.log('渲染字符:', char);
+    
+    // 创建字符容器
+    const charDiv = document.createElement('div');
+    charDiv.style.display = 'inline-block';
+    charDiv.style.margin = '10px';
+    charDiv.style.textAlign = 'center';
+    
+    // 汉字显示
+    const charEl = document.createElement('div');
+    charEl.className = 'character-item';
+    charEl.textContent = char;
+    charEl.onclick = () => {
+      window.location.href = `character.html?char=${char}`;
+    };
+    
+    charDiv.appendChild(charEl);
+    container.appendChild(charDiv);
+  });
+  
+  console.log('基础渲染完成');
+}
